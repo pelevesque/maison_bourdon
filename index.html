@@ -1,13 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Maison Bourdon</title>
-    <meta name="description" content="Description">
+    <title>Maison Bourdon &ndash; Lunettes fabriquées à Montréal</title>
+    <meta name="description" content="Maison Bourdon - Lunettes fabriquées à Montréal">
+    <meta name="keywords" content="Maison Bourdon, lunettes, Montréal, fait à la main, design">
     <meta name="author" content="Maison Bourdon">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--[if IE>><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/scrollIt.min.js"></script>
+    <script>
+      $(function(){
+        $.scrollIt({
+          easing: 'linear',
+          scrollTime: 1000,
+          activeClass: 'active',
+          onPageChange: null,
+          topOffset: -86
+        });
+      });
+    </script>
   </head>
   <body>
+    <header>
+      <hgroup>
+        <h1>Maison Bourdon</h1>
+        <h2>Lunettes fabriquées à Montréal</h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li><a href="" data-scroll-nav="1">Lunettes</a></li>
+          <li><a href="" data-scroll-nav="2">Infos</a></li>
+          <li><a href="" data-scroll-nav="3">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="" data-scroll-goto="0"><i class="fa fa-chevron-up fa-2x"></i></a>
+    </header>
+    <div role="cover" data-scroll-index="0"></div>
+    <section id="main" data-scroll-index="1">
+      <h1>Lunettes</hi>
+      <ul>
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+      </ul>
+    </section>
+    <section id="infos" data-scroll-index="2">
+      <h1>Infos</h1>
+      <p>La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.</p>
+      <p>Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.</p>
+    </section>
+    <section id="contact" data-scroll-index="3">
+      <h1>Contact</h1>
+      <div class="vcard">
+        <p class="tel"><span>Telephone<span class="sep">:</span></span> 1-(514)-434-0987</p>
+        <p class="email"><span>Email<span class="sep">:</span></span> <a href="mailto:maisonbourdon@gmail.com">maisonbourdon@gmail.com</a></p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" id="facebook"><span>Facebook</span><i class="fa fa-facebook-square fa-3x"></i></a></li>
+          <li><a href="https://twitter.com/maisonbourdon" id="twitter"><span>Twitter</span><i class="fa fa-twitter fa-3x"></i></a></li>
+          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" id="youtube"><span>YouTube</span><i class="fa fa-youtube fa-3x"></i></a></li>
+        </ul>
+      </nav>
+    </section>
+    <footer>
+      <p>© 2014 <a href="http://maisonbourdon.com">Maison Bourdon</a> <span class="sep">•</span> Photos de Hugues Villeneuve <span class="sep">•</span> Icons de <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></p>
+    </footer>
   </body>
 </html>

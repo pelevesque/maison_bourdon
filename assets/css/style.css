@@ -12,7 +12,7 @@ small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, menu, nav,
+figure, figcaption, footer, header, main, hgroup, menu, nav,
 output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ html { font-size: 100.01%; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, main, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -67,4 +67,205 @@ abbr[title], dfn[title] {
   cursor:help;
 }
 
-/****************************************/
+/******************************************************************************/
+
+/* IE 7 Fix for inline-block */
+header hgroup, header nav, header nav li, section#contact nav li {
+  zoom: 1;
+  *display: inline;
+}
+
+a:link, a:visited {
+  -moz-transition: color 500ms linear;
+  -webkit-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+
+* { /* not sure what this does */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400; /* add this in html */
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  background: #ffffff;
+}
+
+header hgroup {
+  display: inline-block;
+  vertical-align: middle;
+  width: 164px;
+  height: 56px;
+  background-image: url('logo.png');
+}
+
+header hgroup h1, header hgroup h2 {
+  visibility: hidden;
+}
+
+header nav {
+  display: inline-block;
+  margin-left: 10%;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-transform:lowercase;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+header a:link, header a:visited {
+  color: #999999;
+}
+
+header a:hover, header a:active {
+  color: #000000;
+}
+
+header > a {
+  float: right;
+  margin-top: 10px;
+}
+
+div[role="cover"] {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 40rem;
+  background-color: #000000;
+  background-image: url("banners/banner_1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+section#main {
+  background: #ffed23;
+}
+
+section#main li {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  background: #234234;	
+  margin: 30px;
+}
+
+section#infos {
+  background: #fed234;
+}
+
+section#main h1, section#infos h1, section#contact h1 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  color: #666666;
+  text-align: center;
+  text-transform:lowercase;
+}
+
+section#infos p {
+  text-align: left;
+  line-height: 1.8em;
+  font-size: 1.3em;
+  color: #000000;
+  margin-bottom: 30px
+}
+
+section#infos p:last-child {
+  margin-bottom: 0
+}
+
+section#main, section#infos, section#contact {
+  padding: 35px 60px;
+}
+
+section#contact h1 {
+  margin-bottom: 60px;
+}
+
+section#contact .vcard {
+  margin-bottom: 60px;	
+}
+
+section#contact .vcard p {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+section#contact .vcard p span {
+  display: none;
+}
+
+section#contact .vcard p.email a:link, section#contact .vcard p.email a:visited {
+  color: #bbbbbb;
+}
+
+section#contact .vcard p.email a:hover, section#contact .vcard p.email a:active {
+  color: #000000;	
+}
+
+section#contact nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section#contact nav li {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+}
+
+section#contact nav li a span {
+  display: none;
+}
+
+section#contact nav li a:link, section#contact nav li a:visited {
+  color: #bbbbbb;
+}
+
+section#contact nav li a:hover, section#contact nav li a:active {
+  color: #000000;
+}
+
+section#contact nav li a#facebook:hover, section#contact nav li a#facebook:active {
+  color: #3b5998;
+}
+
+section#contact nav li a#twitter:hover, section#contact nav li a#twitter:active {
+  color: #00acee;
+}
+
+section#contact nav li a#youtube:hover, section#contact nav li a#youtube:active {
+  color: #ff0000;
+}
+
+footer {
+  padding: 20px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 0.75em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+footer a:link, footer a:visited {
+  color: #ff0000;
+}
+
+footer a:hover, footer a:active {
+  color: #ffffff;
+}
