@@ -102,6 +102,7 @@ header {
   left: 0;
   padding: 1em;
   background: #ffffff;
+  z-index: 9999999;
 }
 
 header hgroup {
@@ -249,6 +250,10 @@ section#contact nav li a#twitter:hover, section#contact nav li a#twitter:active 
   color: #00acee;
 }
 
+section#contact nav li a#pinterest:hover, section#contact nav li a#pinterest:active {
+  color: #d11c2c;
+}
+
 section#contact nav li a#youtube:hover, section#contact nav li a#youtube:active {
   color: #ff0000;
 }
@@ -268,4 +273,11 @@ footer a:link, footer a:visited {
 
 footer a:hover, footer a:active {
   color: #ffffff;
+}
+
+.galleria {width: 800px; height: 500px; background: #000; margin: auto; }
+
+section#gallery {
+  padding: 50px 0;
+  background: #cccccc;
 }

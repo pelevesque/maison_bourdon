@@ -12,7 +12,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if IE>><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/galleria/galleria-1.3.5.min.js"></script>
     <script src="assets/js/scrollIt.min.js"></script>
+    <style>
+     section#gallery { display: none; }
+    </style>
     <script>
       $(function(){
         $.scrollIt({
@@ -23,6 +27,16 @@
           topOffset: -86
         });
       });
+      // Set up the gallery
+      if (Galleria) {
+      	// display css
+      	// 
+      	
+      	
+      	
+      }
+      Galleria.loadTheme('assets/galleria/themes/twelve/galleria.twelve.min.js');
+      Galleria.run('.galleria');
     </script>
   </head>
   <body>
@@ -34,8 +48,9 @@
       <nav>
         <ul>
           <li><a href="" data-scroll-nav="1">Lunettes</a></li>
-          <li><a href="" data-scroll-nav="2">Infos</a></li>
-          <li><a href="" data-scroll-nav="3">Contact</a></li>
+          <!--<li><a href="" data-scroll-nav="2">Photos</a></li>-->
+          <li><a href="" data-scroll-nav="3">Infos</a></li>
+          <li><a href="" data-scroll-nav="4">Contact</a></li>
         </ul>
       </nav>
       <a href="" data-scroll-goto="0"><i class="fa fa-chevron-up fa-2x"></i></a>
@@ -46,13 +61,27 @@
       <ul>
         <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
       </ul>
-    </section>
-    <section id="infos" data-scroll-index="2">
+    </section><!-- 
+    <section id="gallery" data-scroll-index="2">
+      <div class="galleria">
+        <img src="assets/images/galleria/photos2.jpg">
+        <img src="assets/images/galleria/photos3.jpg">
+        <img src="assets/images/galleria/photos4.jpg">
+        <img src="assets/images/galleria/photos6.jpg">
+        <img src="assets/images/galleria/photos7.jpg">
+        <img src="assets/images/galleria/photos8.jpg">
+        <img src="assets/images/galleria/photos9.jpg">
+        <img src="assets/images/galleria/photos10.jpg">
+        <img src="assets/images/galleria/photos11.jpg">
+        <img src="assets/images/galleria/photos1.jpg">
+      </div>
+    </section>-->
+    <section id="infos" data-scroll-index="3">
       <h1>Infos</h1>
       <p>La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.</p>
       <p>Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.</p>
     </section>
-    <section id="contact" data-scroll-index="3">
+    <section id="contact" data-scroll-index="4">
       <h1>Contact</h1>
       <div class="vcard">
         <p class="tel"><span>Telephone<span class="sep">:</span></span> 1-(514)-434-0987</p>
@@ -62,6 +91,7 @@
         <ul>
           <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" id="facebook"><span>Facebook</span><i class="fa fa-facebook-square fa-3x"></i></a></li>
           <li><a href="https://twitter.com/maisonbourdon" id="twitter"><span>Twitter</span><i class="fa fa-twitter fa-3x"></i></a></li>
+          <li><a href="#" id="pinterest"><span>Pinterest</span><i class="fa fa-pinterest fa-3x"></i></a></li>
           <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" id="youtube"><span>YouTube</span><i class="fa fa-youtube fa-3x"></i></a></li>
         </ul>
       </nav>
