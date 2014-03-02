@@ -73,7 +73,7 @@ header > a {
   margin-top: 10px;
 }
 
-#cover {
+#section_0 {
   background-image : url(background.jpg);
   background-color: #000000;
   background-size: cover;
@@ -82,18 +82,18 @@ header > a {
 
 /************ COLORS */
 
-#cover {
+#section_0 {
 	background-color: #000000;
 }
 
-#infos {
+#section_1 {
 	background-color: #ff34ed;
 }
 
-#glasses {
+#section_2 {
 	background-color: #456edf;
 }
 
-#contact {
+#section_3 {
 	background-color: #ffed45;
 }

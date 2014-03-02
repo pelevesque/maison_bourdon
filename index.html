@@ -23,7 +23,10 @@
         $('.flexslider').flexslider({
           controlNav: "thumbnails"
         });
-        $.fn.fullpage();
+        $.fn.fullpage({
+          menu: '#nav',
+          anchors: ['cover', 'glasses', 'infos', 'contact']
+        });
       });
     </script>
   </head>
@@ -35,20 +38,15 @@
       </hgroup>
       <nav>
         <ul id="nav">
-          <li><a href="">Cover</a></li>
-          <li><a href="">Infos</a></li>
-          <li><a href="">Glasses</a></li>
-          <li><a href="">Contact</a></li>
+          <li data-menuanchor="cover"><a href="#cover"><i class="fa fa-caret-up fa-3x"></i></a></li>
+          <li data-menuanchor="glasses"><a href="#glasses">Glasses</a></li>
+          <li data-menuanchor="infos"><a href="#infos">Infos</a></li>
+          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div class="section" id="cover"></div>
-    <div class="section" id="infos">
-      <h1>Infos</h1>
-      <p>La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.</p>
-      <p>Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.</p>
-    </div>
-    <div class="section" id="glasses">
+    <div class="section" id="section_0"></div>
+    <div class="section" id="section_1">
       <div class="slide">
         <div id="MB01">
           <div class="content">
@@ -72,7 +70,12 @@
         </div>
       </div>
     </div>
-    <div class="section" id="contact">
+    <div class="section" id="section_2">
+      <h1>Infos</h1>
+      <p>La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.</p>
+      <p>Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.</p>
+    </div>
+    <div class="section" id="section_3">
       <h1>Contact</h1>
       <div class="vcard">
         <p class="tel"><span>Telephone<span class="sep">:</span></span> +1 (514) 434-0987</p>
