@@ -1,0 +1,99 @@
+/* IE 7 Fix for inline-block */
+header hgroup, header nav, header nav li, section#contact nav li {
+  zoom: 1;
+  *display: inline;
+}
+
+a:link, a:visited {
+  -moz-transition: color 500ms linear;
+  -webkit-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+
+* { /* not sure what this does */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400; /* add this in html */
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  background: #ffffff;
+  z-index: 9999999;
+  opacity: 0.8;
+}
+
+header hgroup {
+  display: inline-block;
+  vertical-align: middle;
+  width: 164px;
+  height: 56px;
+  background-image: url('logo.png');
+}
+
+header hgroup h1, header hgroup h2 {
+  visibility: hidden;
+}
+
+header nav {
+  display: inline-block;
+  margin-left: 10%;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-transform:lowercase;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+header a:link, header a:visited {
+  color: #999999;
+}
+
+header a:hover, header a:active {
+  color: #000000;
+}
+
+header > a {
+  float: right;
+  margin-top: 10px;
+}
+
+#cover {
+  background-image : url(background.jpg);
+  background-color: #000000;
+  background-size: cover;
+  height: 50rem;
+}
+
+/************ COLORS */
+
+#cover {
+	background-color: #000000;
+}
+
+#infos {
+	background-color: #ff34ed;
+}
+
+#glasses {
+	background-color: #456edf;
+}
+
+#contact {
+	background-color: #ffed45;
+}

@@ -6,37 +6,25 @@
     <meta name="description" content="Maison Bourdon - Lunettes fabriquées à Montréal">
     <meta name="keywords" content="Maison Bourdon, lunettes, Montréal, fait à la main, design">
     <meta name="author" content="Maison Bourdon">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/jquery.fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="assets/jquery.flexslider/jquery.flexslider.css">
     <!--[if IE>><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/galleria/galleria-1.3.5.min.js"></script>
-    <script src="assets/js/scrollIt.min.js"></script>
-    <style>
-     section#gallery { display: none; }
-    </style>
-    <script>
-      $(function(){
-        $.scrollIt({
-          easing: 'linear',
-          scrollTime: 1000,
-          activeClass: 'active',
-          onPageChange: null,
-          topOffset: -86
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.fullPage/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.flexslider/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $('.flexslider').flexslider({
+          controlNav: "thumbnails"
         });
+        $.fn.fullpage();
       });
-      // Set up the gallery
-      if (Galleria) {
-      	// display css
-      	// 
-      	
-      	
-      	
-      }
-      Galleria.loadTheme('assets/galleria/themes/twelve/galleria.twelve.min.js');
-      Galleria.run('.galleria');
     </script>
   </head>
   <body>
@@ -46,58 +34,58 @@
         <h2>Lunettes fabriquées à Montréal</h2>
       </hgroup>
       <nav>
-        <ul>
-          <li><a href="" data-scroll-nav="1">Lunettes</a></li>
-          <!--<li><a href="" data-scroll-nav="2">Photos</a></li>-->
-          <li><a href="" data-scroll-nav="3">Infos</a></li>
-          <li><a href="" data-scroll-nav="4">Contact</a></li>
+        <ul id="nav">
+          <li><a href="">Cover</a></li>
+          <li><a href="">Infos</a></li>
+          <li><a href="">Glasses</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <a href="" data-scroll-goto="0"><i class="fa fa-chevron-up fa-2x"></i></a>
     </header>
-    <div role="cover" data-scroll-index="0"></div>
-    <section id="main" data-scroll-index="1">
-      <h1>Lunettes</hi>
-      <ul>
-        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-      </ul>
-    </section><!-- 
-    <section id="gallery" data-scroll-index="2">
-      <div class="galleria">
-        <img src="assets/images/galleria/photos2.jpg">
-        <img src="assets/images/galleria/photos3.jpg">
-        <img src="assets/images/galleria/photos4.jpg">
-        <img src="assets/images/galleria/photos6.jpg">
-        <img src="assets/images/galleria/photos7.jpg">
-        <img src="assets/images/galleria/photos8.jpg">
-        <img src="assets/images/galleria/photos9.jpg">
-        <img src="assets/images/galleria/photos10.jpg">
-        <img src="assets/images/galleria/photos11.jpg">
-        <img src="assets/images/galleria/photos1.jpg">
-      </div>
-    </section>-->
-    <section id="infos" data-scroll-index="3">
+    <div class="section" id="cover"></div>
+    <div class="section" id="infos">
       <h1>Infos</h1>
       <p>La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.</p>
       <p>Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.</p>
-    </section>
-    <section id="contact" data-scroll-index="4">
+    </div>
+    <div class="section" id="glasses">
+      <div class="slide">
+        <div id="MB01">
+          <div class="content">
+            <div class="flexslider_wrapper">
+             <div class="flexslider">
+                <ul class="slides">
+                  <li data-thumb="images/lunettes/MB01_front_black-white.jpg"><img src="images/lunettes/MB01_front_black-white.jpg"><p class="flex-caption">MB01 some caption here 1</p></li>
+                  <li data-thumb="images/lunettes/MB01_front_white-black.jpg"><img src="images/lunettes/MB01_front_white-black.jpg"><p class="flex-caption">MB01 some caption here 2</p></li>
+                  <li data-thumb="images/lunettes/MB01_side_black-black.jpg"><img src="images/lunettes/MB01_side_black-black.jpg"><p class="flex-caption">MB01 some caption here 3</p></li>
+                  <li data-thumb="images/lunettes/MB01_side_black-blacks.jpg"><img src="images/lunettes/MB01_side_black-blacks.jpg"><p class="flex-caption">MB01 some caption here 4</p></li>
+                  <li data-thumb="images/lunettes/MB01_side_black-white.jpg"><img src="images/lunettes/MB01_side_black-white.jpg"><p class="flex-caption">MB01 some caption here 5</p></li>
+                  <li data-thumb="images/lunettes/MB01_side_white-black.jpg"><img src="images/lunettes/MB01_side_white-black.jpg"><p class="flex-caption">MB01 some caption here 6</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="description">
+              <h1>MB01</h1>
+              <p>This is a product description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="contact">
       <h1>Contact</h1>
       <div class="vcard">
-        <p class="tel"><span>Telephone<span class="sep">:</span></span> 1-(514)-434-0987</p>
+        <p class="tel"><span>Telephone<span class="sep">:</span></span> +1 (514) 434-0987</p>
         <p class="email"><span>Email<span class="sep">:</span></span> <a href="mailto:maisonbourdon@gmail.com">maisonbourdon@gmail.com</a></p>
       </div>
       <nav>
         <ul>
-          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" id="facebook"><span>Facebook</span><i class="fa fa-facebook-square fa-3x"></i></a></li>
-          <li><a href="https://twitter.com/maisonbourdon" id="twitter"><span>Twitter</span><i class="fa fa-twitter fa-3x"></i></a></li>
-          <li><a href="#" id="pinterest"><span>Pinterest</span><i class="fa fa-pinterest fa-3x"></i></a></li>
-          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" id="youtube"><span>YouTube</span><i class="fa fa-youtube fa-3x"></i></a></li>
+          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" id="facebook"><span>Facebook</span><i class="fa fa-facebook-square fa-4x"></i></a></li>
+          <li><a href="https://twitter.com/maisonbourdon" id="twitter"><span>Twitter</span><i class="fa fa-twitter fa-4x"></i></a></li>
+          <li><a href="#" id="pinterest"><span>Pinterest</span><i class="fa fa-pinterest fa-4x"></i></a></li>
+          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" id="youtube"><span>YouTube</span><i class="fa fa-youtube fa-4x"></i></a></li>
         </ul>
       </nav>
-    </section>
-    <footer>
-      <p>© 2014 <a href="http://maisonbourdon.com">Maison Bourdon</a> <span class="sep">•</span> Photos de Hugues Villeneuve <span class="sep">•</span> Icons de <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></p>
-    </footer>
+    </div>
   </body>
 </html>
