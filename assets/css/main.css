@@ -1,8 +1,6 @@
-/* IE 7 Fix for inline-block */
-header hgroup, header nav, header nav li, section#contact nav li {
-  zoom: 1;
-  *display: inline;
-}
+/************************************************
+* COMMON
+*************************************************/
 
 a:link, a:visited {
   -moz-transition: color 500ms linear;
@@ -11,28 +9,22 @@ a:link, a:visited {
   transition: color 500ms linear;
 }
 
-* { /* not sure what this does */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: 400; /* add this in html */
-}
+/************************************************
+* HEADER
+*************************************************/
 
 header {
+  font: 300 1.1em/1 'Lato', Helvetica, sans-serif;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1em;
-  background: #ffffff;
-  z-index: 9999999;
+  padding: 10px;
+  background: #fff;
+  z-index: 9999;
+  -moz-opacity: 0.8;
   opacity: 0.8;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80);
 }
 
 header hgroup {
@@ -49,15 +41,15 @@ header hgroup h1, header hgroup h2 {
 
 header nav {
   display: inline-block;
-  margin-left: 10%;
-  font-size: 1em;
-  letter-spacing: 2px;
+  margin-left: 100px;
+  letter-spacing: 1px;
   text-transform:lowercase;
 }
 
 header nav li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 40px;
+  vertical-align: middle;
 }
 
 header a:link, header a:visited {
@@ -68,32 +60,220 @@ header a:hover, header a:active {
   color: #000000;
 }
 
-header > a {
-  float: right;
-  margin-top: 10px;
+/* IE 7 Fix for inline-block */
+header hgroup, header nav, header nav li {
+  zoom: 1;
+  *display: inline;
 }
 
+/************************************************
+* SECTION 0 (Cover)
+*************************************************/
+
 #section_0 {
-  background-image : url(background.jpg);
   background-color: #000000;
+}
+
+#section_0 .first {
+  background-image : url(background_1.jpg);
   background-size: cover;
-  height: 50rem;
 }
 
-/************ COLORS */
-
-#section_0 {
-	background-color: #000000;
+#section_0 .second {
+  background-image : url(background_2.jpg);
+  background-size: cover;
 }
+
+#section_0 .third {
+  background-image : url(background_3.jpg);
+  background-size: cover;
+}	
+	
+#section_0 p {
+  display: none;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  text-align: center;
+  font: 100 2.8em/2 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: #a12038;
+  text-shadow: 2px 2px 2px #666;
+}
+
+/************************************************
+* SECTION 1 (Glasses)
+*************************************************/
+
+/*
+    <div class="section" id="section_1">
+      <div class="slide">
+        <div class="content_wrapper">
+          <div class="flexslider_wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+              
+              
+              <div class="description">
+        */
 
 #section_1 {
-	background-color: #ff34ed;
+  background-color: #f5f5f5;
 }
+
+#section_1 .content_wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+#section_1 .flexslider_wrapper {
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 1px 9px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 1px 9px rgba(0,0,0,.5);
+  -o-box-shadow: 0 1px 9px rgba(0,0,0,.5);
+  box-shadow: 0 1px 9px rgba(0,0,0,.5); 
+}
+
+#section_1 .description {
+	width: 30%;
+
+	margin-left: 5%;
+	
+	
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+ /* margin-left: 50px; */
+ /* border: 1px solid #00ff00; */
+
+  
+
+}
+
+#section_1 .description h1 {
+  font: 300 1.6em/1 'Lato', Helvetica, sans-serif;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+#section_1 .description .text {
+  font: 100 1.2em/1.4 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#section_1 .description .price {
+  font: 300 1.6em/1 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+
+
 
 #section_2 {
-	background-color: #456edf;
+  background: #23efef;	
 }
 
-#section_3 {
-	background-color: #ffed45;
+#section_2 h1 {
+  display: none;
 }
+
+#section_2 p {
+  font: 300 1.4em/2 'Lato', Helvetica, sans-serif;
+
+  margin: 50px 100px 50px 100px;
+}
+
+
+
+/*************************************/
+/* Contact
+/*************************************/
+
+#section_3 {
+  background: #ffed34;
+  background-image: url(glasses_background.png);
+  background-position: bottom right; /* Positioning */
+  background-repeat: no-repeat;
+}
+
+#section_3 h1, #section_3 .vcard p span, #section_3 nav li a span {
+  display: none;
+}
+
+/*
+#contact h1 {
+	text-indent: -9999px;
+	display: block; 
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	height: 330px;
+	width: 320px;
+	background-image: 	url(logo_big.png);
+	opacity: 0.3;
+}
+*/
+
+#section_3 .vcard {
+  /*margin-bottom: 30px;*/
+}
+
+#section_3 .vcard p {
+  text-align: center;
+
+  
+  font: 300 2.4em/1 'Lato', Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+#section_3 .vcard p.email a:link, #section_3 .vcard p.email a:visited {
+  color: #000;
+
+}
+
+#section_3 .vcard p.email a:hover, #section_3 .vcard p.email a:active {
+  color: #ff3432;
+}
+
+#section_3 nav {
+  text-align: center;
+}
+
+#section_3 nav li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+#section_3 nav a:link, #section_3 nav a:visited {
+  color: #ffffff;
+}
+
+#section_3 a#facebook:hover, #section_3 a#facebook:active {
+  color: #3b5998;
+}
+
+#section_3 a#twitter:hover, #section_3 a#twitter:active {
+  color: #00acee;
+}
+
+#section_3 a#pinterest:hover, #section_3 a#pinterest:active {
+  color: #d11c2c;
+}
+
+#section_3 a#youtube:hover, #section_3 a#youtube:active {
+  color: #ff0000;
+}
+
+/*************************************/
+/* Glasses
+/*************************************/
+
+
+
+
+
+

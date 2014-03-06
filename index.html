@@ -24,8 +24,10 @@
           controlNav: "thumbnails"
         });
         $.fn.fullpage({
+          verticalCentered: true,
+          resize : false,
           menu: '#nav',
-          anchors: ['cover', 'glasses', 'infos', 'contact']
+          anchors: ['couvert', 'lunettes', 'infos', 'contact']
         });
       });
     </script>
@@ -38,43 +40,122 @@
       </hgroup>
       <nav>
         <ul id="nav">
-          <li data-menuanchor="cover"><a href="#cover"><i class="fa fa-caret-up fa-3x"></i></a></li>
-          <li data-menuanchor="glasses"><a href="#glasses">Glasses</a></li>
+          <li data-menuanchor="couvert"><a href="#couvert">Accueil</a></li>
+          <li data-menuanchor="lunettes"><a href="#lunettes">Lunettes</a></li>
           <li data-menuanchor="infos"><a href="#infos">Infos</a></li>
           <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div class="section" id="section_0"></div>
+    <div class="section" id="section_0">
+      <div class="slide first">
+        <p>Lunettes fabriquées à Montréal</p>
+      </div>
+      <div class="slide second">
+        <p>Lunettes fabriquées à Montréal</p>
+      </div>
+      <div class="slide third">
+        <p>Lunettes fabriquées à Montréal</p>
+      </div>
+    </div>
+
+
+
     <div class="section" id="section_1">
+ 
+ 
       <div class="slide">
-        <div id="MB01">
-          <div class="content">
-            <div class="flexslider_wrapper">
-             <div class="flexslider">
-                <ul class="slides">
-                  <li data-thumb="images/lunettes/MB01_front_black-white.jpg"><img src="images/lunettes/MB01_front_black-white.jpg"><p class="flex-caption">MB01 some caption here 1</p></li>
-                  <li data-thumb="images/lunettes/MB01_front_white-black.jpg"><img src="images/lunettes/MB01_front_white-black.jpg"><p class="flex-caption">MB01 some caption here 2</p></li>
-                  <li data-thumb="images/lunettes/MB01_side_black-black.jpg"><img src="images/lunettes/MB01_side_black-black.jpg"><p class="flex-caption">MB01 some caption here 3</p></li>
-                  <li data-thumb="images/lunettes/MB01_side_black-blacks.jpg"><img src="images/lunettes/MB01_side_black-blacks.jpg"><p class="flex-caption">MB01 some caption here 4</p></li>
-                  <li data-thumb="images/lunettes/MB01_side_black-white.jpg"><img src="images/lunettes/MB01_side_black-white.jpg"><p class="flex-caption">MB01 some caption here 5</p></li>
-                  <li data-thumb="images/lunettes/MB01_side_white-black.jpg"><img src="images/lunettes/MB01_side_white-black.jpg"><p class="flex-caption">MB01 some caption here 6</p></li>
-                </ul>
-              </div>
+        <div class="content_wrapper">
+          <div class="flexslider_wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="images/lunettes/MB01_front_black-white.jpg"><img src="images/lunettes/MB01_front_black-white.jpg"><p class="flex-caption">MB01 some caption here 1</p></li>
+                <li data-thumb="images/lunettes/MB01_front_white-black.jpg"><img src="images/lunettes/MB01_front_white-black.jpg"><p class="flex-caption">MB01 some caption here 2</p></li>
+                <li data-thumb="images/lunettes/MB01_side_black-black.jpg"><img src="images/lunettes/MB01_side_black-black.jpg"><p class="flex-caption">MB01 some caption here 3</p></li>
+                <li data-thumb="images/lunettes/MB01_side_black-blacks.jpg"><img src="images/lunettes/MB01_side_black-blacks.jpg"><p class="flex-caption">MB01 some caption here 4</p></li>
+                <li data-thumb="images/lunettes/MB01_side_black-white.jpg"><img src="images/lunettes/MB01_side_black-white.jpg"><p class="flex-caption">MB01 some caption here 5</p></li>
+                <li data-thumb="images/lunettes/MB01_side_white-black.jpg"><img src="images/lunettes/MB01_side_white-black.jpg"><p class="flex-caption">MB01 some caption here 6</p></li>
+              </ul>
             </div>
-            <div class="description">
-              <h1>MB01</h1>
-              <p>This is a product description</p>
-            </div>
+          </div>
+          <div class="description">
+            <h1>MB01</h1>
+            <p class="text">This is a product description. This is a product description....</p>
+            <p class="price">300$ US</p>
           </div>
         </div>
       </div>
+
+
+      <div class="slide">
+        <div class="content_wrapper">
+          <div class="flexslider_wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="images/lunettes/MB02_front_black-black.jpg"><img src="images/lunettes/MB02_front_black-black.jpg"><p class="flex-caption">MB02 some caption here 1</p></li>
+                <li data-thumb="images/lunettes/MB02_front_white-black.jpg"><img src="images/lunettes/MB02_front_white-black.jpg"><p class="flex-caption">MB02 some caption here 2</p></li>
+                <li data-thumb="images/lunettes/MB02_side_black-black.jpg"><img src="images/lunettes/MB02_side_black-black.jpg"><p class="flex-caption">MB02 some caption here 3</p></li>
+                <li data-thumb="images/lunettes/MB02_side_black-blacks.jpg"><img src="images/lunettes/MB02_side_black-blacks.jpg"><p class="flex-caption">MB02 some caption here 4</p></li>
+                <li data-thumb="images/lunettes/MB02_side_white-black.jpg"><img src="images/lunettes/MB02_side_white-black.jpg"><p class="flex-caption">MB02 some caption here 5</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="description">
+            <h1>MB02</h1>
+            <p class="text">This is a product description. This is a product description....</p>
+            <p class="price">300$ US</p>
+          </div>
+        </div>
+      </div>
+      
+       <div class="slide">
+        <div class="content_wrapper">
+          <div class="flexslider_wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="images/lunettes/MB03_front_black-black.jpg"><img src="images/lunettes/MB03_front_black-black.jpg"><p class="flex-caption">MB03 some caption here 1</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="description">
+            <h1>MB03</h1>
+            <p class="text">This is a product description. This is a product description....</p>
+            <p class="price">300$ US</p>
+          </div>
+        </div>
+      </div>
+      
+       <div class="slide">
+        <div class="content_wrapper">
+          <div class="flexslider_wrapper">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="images/lunettes/MB04_front_brown-brown.jpg"><img src="images/lunettes/MB04_front_brown-brown.jpg"><p class="flex-caption">MB04 some caption here 1</p></li>
+                <li data-thumb="images/lunettes/MB04_front_black-black.jpg"><img src="images/lunettes/MB04_front_black-black.jpg"><p class="flex-caption">MB04 some caption here 1</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="description">
+            <h1>MB04</h1>
+            <p class="text">This is a product description. This is a product description....</p>
+            <p class="price">300$ US</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
+
+
+
     <div class="section" id="section_2">
       <h1>Infos</h1>
       <p>La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.</p>
       <p>Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.</p>
     </div>
+
+
     <div class="section" id="section_3">
       <h1>Contact</h1>
       <div class="vcard">
@@ -90,5 +171,8 @@
         </ul>
       </nav>
     </div>
+
+
+
   </body>
 </html>
