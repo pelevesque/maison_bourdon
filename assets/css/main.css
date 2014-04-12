@@ -2,10 +2,18 @@
 * COMMON
 *************************************************/
 
-a:link, a:visited {
-  -moz-transition: color 500ms linear;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
   -webkit-transition: color 500ms linear;
+  -moz-transition: color 500ms linear;
   -ms-transition: color 500ms linear;
+  -o-transition: color 500ms linear;
   transition: color 500ms linear;
 }
 
@@ -14,266 +22,599 @@ a:link, a:visited {
 *************************************************/
 
 header {
-  font: 300 1.1em/1 'Lato', Helvetica, sans-serif;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px;
-  background: #fff;
-  z-index: 9999;
-  -moz-opacity: 0.8;
+  right: 0;
+  padding: 15px;
+  color: #aaa;
+  background: #2a2017;
+  z-index: 99;
+  height: 175px;
   opacity: 0.8;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=80);
+  overflow: hidden;
+  -webkit-transition: height 500ms linear, opacity 500ms linear;
+  -moz-transition: height 500ms linear, opacity 500ms linear;
+  -ms-transition: height 500ms linear, opacity 500ms linear;
+  -o-transition: height 500ms linear, opacity 500ms linear;
+  transition: height 500ms linear, opacity 500ms linear;
 }
 
-header hgroup {
+.header_small {
+  height: 86px;
+  opacity: 1;
+}
+
+header h1 {
   display: inline-block;
   vertical-align: middle;
   width: 164px;
   height: 56px;
   background-image: url('logo.png');
-}
-
-header hgroup h1, header hgroup h2 {
-  visibility: hidden;
+  text-indent: -9999px;
 }
 
 header nav {
   display: inline-block;
   margin-left: 100px;
+  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
   letter-spacing: 1px;
-  text-transform:lowercase;
+  text-transform: uppercase;
 }
 
 header nav li {
   display: inline-block;
-  margin-right: 40px;
   vertical-align: middle;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+header > a {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font: 300 0.7em/1 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 header a:link, header a:visited {
-  color: #999999;
+  color: #aaa;
 }
 
-header a:hover, header a:active {
-  color: #000000;
+header a:hover, header a:active, header a.active {
+  color: #fff;
 }
 
-/* IE 7 Fix for inline-block */
-header hgroup, header nav, header nav li {
+header p {
+  font: 300 2.6em/1 'Lato', Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 6px;
+  margin-top: 20px;
+  color: #db5705;
+}
+
+header p span#quebec_flag {
+  height: 53px;
+  width: 80px;
+  background-image: url('flag_quebec.jpg');
+  margin-left: 10px;
+}
+
+header p span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* IE 7 Fix for inline-block */ 
+header hgroup, header nav, header nav li, header p span {
   zoom: 1;
   *display: inline;
 }
 
 /************************************************
-* SECTION 0 (Cover)
+* BANNER
 *************************************************/
 
-#section_0 {
-  background-color: #000000;
+#banner {
+  position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+  border-bottom: 5px solid #765a45;
 }
 
-#section_0 .first {
-  background-image : url(background_1.jpg);
-  background-size: cover;
-}
-
-#section_0 .second {
-  background-image : url(background_2.jpg);
-  background-size: cover;
-}
-
-#section_0 .third {
-  background-image : url(background_3.jpg);
-  background-size: cover;
-}	
-	
-#section_0 p {
-  display: none;
+#banner .slide{
   position: absolute;
-  top: 90px;
   width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+#banner img.slide{
+  height: auto;
+}
+
+#banner .pager_list{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  bottom: 0;
   text-align: center;
-  font: 100 2.8em/2 'Lato', Helvetica, sans-serif;
-  letter-spacing: 1px;
-  color: #a12038;
-  text-shadow: 2px 2px 2px #666;
+  z-index: 4;
+}
+
+#banner .pager_list li{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 7px;
+  background: #fff;
+  opacity: .7;
+  text-indent: -99999px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+#banner .pager_list li:hover,
+#banner .pager_list li.active{
+  opacity: 1;
 }
 
 /************************************************
-* SECTION 1 (Glasses)
+* SYSTEM
 *************************************************/
 
-/*
-    <div class="section" id="section_1">
-      <div class="slide">
-        <div class="content_wrapper">
-          <div class="flexslider_wrapper">
-            <div class="flexslider">
-              <ul class="slides">
-              
-              
-              <div class="description">
-        */
-
-#section_1 {
-  background-color: #f5f5f5;
+div[role="system"]  {
+  padding: 60px 60px 70px 60px;
+  background: #f5f5f5;
+  background-image: url(ricepaper_pattern.png);
+  border-bottom: 5px solid #ddd;
 }
 
-#section_1 .content_wrapper {
-  width: 80%;
-  margin: auto;
+div[role="system"] h2 {
+  display: none;
 }
 
-#section_1 .flexslider_wrapper {
-  width: 60%;
+div[role="system"] p {
+  text-align: center;
+  font: 300 2em/1.5 'Lato', Helvetica, sans-serif;
+}
+
+div[role="system"] ol li {
   display: inline-block;
   vertical-align: middle;
-  -webkit-box-shadow: 0 1px 9px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 1px 9px rgba(0,0,0,.5);
-  -o-box-shadow: 0 1px 9px rgba(0,0,0,.5);
-  box-shadow: 0 1px 9px rgba(0,0,0,.5); 
+  width: 33%;
+  margin-top: 50px;
+  cursor: pointer;
 }
 
-#section_1 .description {
-	width: 30%;
+div[role="system"] ol li span {
+  display: block;
+  text-align: center;
+  font: 100 4em/1 'Lato', Helvetica, sans-serif; 
+  margin-bottom: 15px;
+  color: #2a2017;
+}
 
-	margin-left: 5%;
-	
-	
+div[role="system"] ol li a {
+  display: block;
+  padding: 20px 0;
+  margin: auto;
+  width: 280px;
+  font: 300 1.2em/1 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  background-color: #db5705;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 0px #db1f05, 0px 9px 25px rgba(0,0,0,.7);
+  -moz-box-shadow: 0px 5px 0px #db1f05, 0px 9px 25px rgba(0,0,0,.7);
+  box-shadow: 0px 5px 0px #db1f05, 0px 9px 25px rgba(0,0,0,.7);
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+div[role="system"] ol li a:active, div[role="system"] ol li a:hover {
+  -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
+}
+
+/************************************************
+* GLASSES
+*************************************************/
+
+div[role="glasses"] {
+  padding: 60px;
+  background: #ffffff;
+  border-bottom: 5px solid #ddd;
+}
+
+div[role="glasses"] h2 {
+  text-align: center;
+  font: 100 3em/1 'Lato', Helvetica, sans-serif;
+  text-shadow: 0 1px 4px rgba(0,0,0,.2);
+  letter-spacing: 3px;
+  color: #2a2017;
+  margin-bottom: 40px;
+}
+
+div[role="glasses"] h3 {
+  position: absolute;
+  bottom: 120px;
+  z-index: 99;
+  font: 300 2.5em/1 'Lato', Helvetica, sans-serif;
+  text-align:center;
+  color: #aaa;
+  letter-spacing: 3px;
+}
+
+div[role="glasses"] .flexslider_wrapper {
+  width: 650px;
+  margin: 0px auto;
+}
+
+/* FlexSlider Browser resets
+*********************************/
+
+/* browser resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+.flexslider .slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+.flexslider .slide {
+  width: 100%
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li { /
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* Clearfix for the .slides element */
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .slides {
+  display: block;
+}
+
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Theme
+*********************************/
+.flexslider {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  zoom: 1;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.flexslider .flex-prev, .flexslider .flex-next {
+  display: none;
+}
+
+.flex-control-thumbs {
+  margin: 0px auto;
+  width: 100%;
+  position: static;
+  overflow: hidden;
+}
+
+.flex-control-thumbs li {
+  width: 20%;
+  float: left;
+  margin: 0;
+}
+
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .4;
+  cursor: pointer;
+  -moz-transition: opacity 500ms linear;
+  -webkit-transition: opacity 500ms linear;
+  -ms-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/************************************************
+* COLORS
+*************************************************/
+
+div[role="colors"] {
+  background: #ededed;
+  padding: 60px;
+  border-bottom: 5px solid #ccc;
+}
+
+div[role="colors"] h2 {
+  margin-bottom: 60px;
+  text-align: center;
+  font: 100 3em/1 'Lato', Helvetica, sans-serif;
+  text-shadow: 0 1px 4px rgba(0,0,0,.2);
+  letter-spacing: 3px;
+  color: #2a2017;
+}
+
+div[role="colors"] ol {
+  text-align: center;
+}
+
+div[role="colors"] ol > li {
   display: inline-block;
   vertical-align: top;
-  margin-top: 20px;
- /* margin-left: 50px; */
- /* border: 1px solid #00ff00; */
-
-  
-
+  padding: 25px;
+  font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
+  background: #fff;
+  margin: 0px 20px;
+  letter-spacing: 1px; 
+  border: 1px solid #dedede;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 
-#section_1 .description h1 {
-  font: 300 1.6em/1 'Lato', Helvetica, sans-serif;
-  margin-top: 15px;
+div[role="colors"] ul {
+  margin-top: 25px;
+}
+
+div[role="colors"] ul > li {
+  font: 300 0.6em/3.6 'Lato', Helvetica, sans-serif;
+  text-align: left;
+}
+
+div[role="colors"] img, div[role="colors"] span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  -webkit-border-radius: 40%;
+  -moz-border-radius: 40%;
+  border-radius: 40%;
+}
+
+/************************************************
+* ORDER
+*************************************************/
+
+div[role="order"] {
+  background: #f5f5f5;
+  padding: 60px;
+  border-bottom: 5px solid #ccc;
+}
+
+div[role="order"] h2 {
+  margin-bottom: 60px;
+  text-align: center;
+  font: 100 3em/1 'Lato', Helvetica, sans-serif;
+  text-shadow: 0 1px 4px rgba(0,0,0,.2);
+  letter-spacing: 3px;
+  color: #2a2017;
+}
+
+div[role="order"] p {
+  text-align: center;	
+}
+
+div[role="order"] p.price {
+  font: 300 3em/1.5 'Lato', Helvetica, sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+div[role="order"] p abbr, div[role="order"] p small {
+  font: 300 0.6em/1 'Lato', Helvetica, sans-serif;
+}
+
+div[role="order"] p.note {
+  font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
+}
+
+div[role="order"] h3, div[role="order"] .vcard p span {
+  display: none;	
+}
+
+div[role="order"] .vcard {
+  margin-top: 60px;
+  margin-bottom: 50px;	
+}
+
+div[role="order"] .vcard p {
+  font: 300 2.6em/2 'Lato', Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+div[role="order"] .warranty {
+  border: 1px solid #ccc;	
+  background: #fefefe;
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;	
+}
+
+div[role="order"] .warranty h3 {
+  display: block;	
+  font: 300 1.2em/1 'Lato', Helvetica, sans-serif;
   margin-bottom: 30px;
-  letter-spacing: 1px;
 }
 
-#section_1 .description .text {
-  font: 100 1.2em/1.4 'Lato', Helvetica, sans-serif;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
+div[role="order"] .warranty p {
+  font: 300 1em/1.6 'Lato', Helvetica, sans-serif;	
+  text-align: left;
 }
 
-#section_1 .description .price {
-  font: 300 1.6em/1 'Lato', Helvetica, sans-serif;
-  letter-spacing: 1px;
+div[role="order"] .warranty p.first {
+  margin-bottom: 20px;
 }
 
+/************************************************
+* INFOS
+*************************************************/
 
-
-
-#section_2 {
-  background: #23efef;	
+div[role="infos"] {
+  background: #f5f5f5;
+  padding: 60px;
+  background-image: url(ricepaper_pattern.png);
+  border-bottom: 5px solid #ddd;
 }
 
-#section_2 h1 {
-  display: none;
+div[role="infos"] h2 {
+  font: 100 3em/2 'Lato', Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-#section_2 p {
+div[role="infos"] #infos_container {
+  overflow: hidden;	
+  margin-bottom: 70px;
+}
+
+div[role="infos"] #infos_container .description p {
   font: 300 1.4em/2 'Lato', Helvetica, sans-serif;
-
-  margin: 50px 100px 50px 100px;
 }
 
-
-
-/*************************************/
-/* Contact
-/*************************************/
-
-#section_3 {
-  background: #ffed34;
-  background-image: url(glasses_background.png);
-  background-position: bottom right; /* Positioning */
-  background-repeat: no-repeat;
+div[role="infos"] #infos_container .description p:first-child {
+  margin-bottom: 30px;	
 }
 
-#section_3 h1, #section_3 .vcard p span, #section_3 nav li a span {
-  display: none;
+div[role="infos"] #infos_container .image {
+  float: right;
+  margin-left: 40px;
+}	
+
+div[role="infos"] #gallery {
+  overflow: hidden;	  
+  margin: 0 auto;
 }
 
-/*
-#contact h1 {
-	text-indent: -9999px;
-	display: block; 
-	position: absolute;
-	top: 100px;
-	left: 50px;
-	height: 330px;
-	width: 320px;
-	background-image: 	url(logo_big.png);
-	opacity: 0.3;
-}
-*/
-
-#section_3 .vcard {
-  /*margin-bottom: 30px;*/
+div[role="infos"] #gallery li {
+  float: left;
+  margin: 20px 30px;
 }
 
-#section_3 .vcard p {
+div[role="infos"] #gallery li img {
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+div[role="infos"] nav {
   text-align: center;
-
-  
-  font: 300 2.4em/1 'Lato', Helvetica, sans-serif;
-  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
-#section_3 .vcard p.email a:link, #section_3 .vcard p.email a:visited {
-  color: #000;
-
-}
-
-#section_3 .vcard p.email a:hover, #section_3 .vcard p.email a:active {
-  color: #ff3432;
-}
-
-#section_3 nav {
-  text-align: center;
-}
-
-#section_3 nav li {
+div[role="infos"] nav li {
   display: inline-block;
   margin: 0 30px;
 }
 
-#section_3 nav a:link, #section_3 nav a:visited {
-  color: #ffffff;
+div[role="infos"] nav a:link, div[role="infos"] nav a:visited {
+  color: #000;
 }
 
-#section_3 a#facebook:hover, #section_3 a#facebook:active {
+div[role="infos"] a#facebook:hover, div[role="infos"] a#facebook:active {
   color: #3b5998;
 }
 
-#section_3 a#twitter:hover, #section_3 a#twitter:active {
+div[role="infos"] a#twitter:hover, div[role="infos"] a#twitter:active {
   color: #00acee;
 }
 
-#section_3 a#pinterest:hover, #section_3 a#pinterest:active {
+div[role="infos"] a#pinterest:hover, div[role="infos"] a#pinterest:active {
   color: #d11c2c;
 }
 
-#section_3 a#youtube:hover, #section_3 a#youtube:active {
+div[role="infos"] a#youtube:hover, div[role="infos"] a#youtube:active {
   color: #ff0000;
 }
 
-/*************************************/
-/* Glasses
-/*************************************/
+div[role="infos"] nav li span{
+  display: none;
+}
 
+/************************************************
+* FOOTER
+*************************************************/
 
+footer {
+  padding: 20px;
+  background: #2a2017;
+  color: #aaa;
+  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
 
+footer a:link, footer a:visited {
+  color: #ffd305;
+}
 
-
-
+footer a:hover, footer a:active {
+  color: #ffffff;
+}
