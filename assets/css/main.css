@@ -1,4 +1,76 @@
 /************************************************
+* PEL CSS RESET
+*
+* Author: Pierre-Emmanuel Lévesque
+* License: none (public domain)
+* Based on Eric Meyer and HTML5 Doctor resets
+*************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, main, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Fixes old browser resize bugs */
+html {
+  font-size: 100.01%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, main, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+/************************************************
 * COMMON
 *************************************************/
 
@@ -50,7 +122,7 @@ header h1 {
   vertical-align: middle;
   width: 164px;
   height: 56px;
-  background-image: url('logo.png');
+  background-image: url("logo.png");
   text-indent: -9999px;
 }
 
@@ -97,7 +169,7 @@ header p {
 header p span#quebec_flag {
   height: 53px;
   width: 80px;
-  background-image: url('flag_quebec.jpg');
+  background-image: url("flag_quebec.jpg");
   margin-left: 10px;
 }
 
@@ -106,7 +178,7 @@ header p span {
   vertical-align: middle;
 }
 
-/* IE 7 Fix for inline-block */ 
+/* IE 7 Fix for inline-block */
 header hgroup, header nav, header nav li, header p span {
   zoom: 1;
   *display: inline;
@@ -123,7 +195,7 @@ header hgroup, header nav, header nav li, header p span {
   border-bottom: 5px solid #765a45;
 }
 
-#banner .slide{
+#banner .slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -132,11 +204,11 @@ header hgroup, header nav, header nav li, header p span {
   opacity: 0;
 }
 
-#banner img.slide{
+#banner img.slide {
   height: auto;
 }
 
-#banner .pager_list{
+#banner .pager_list {
   position: absolute;
   width: 100%;
   height: 40px;
@@ -146,7 +218,7 @@ header hgroup, header nav, header nav li, header p span {
   z-index: 4;
 }
 
-#banner .pager_list li{
+#banner .pager_list li {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -160,7 +232,7 @@ header hgroup, header nav, header nav li, header p span {
 }
 
 #banner .pager_list li:hover,
-#banner .pager_list li.active{
+#banner .pager_list li.active {
   opacity: 1;
 }
 
@@ -168,23 +240,23 @@ header hgroup, header nav, header nav li, header p span {
 * SYSTEM
 *************************************************/
 
-div[role="system"]  {
+#system {
   padding: 60px 60px 70px 60px;
   background: #f5f5f5;
-  background-image: url(ricepaper_pattern.png);
+  background-image: url("ricepaper_pattern.png");
   border-bottom: 5px solid #ddd;
 }
 
-div[role="system"] h2 {
+#system h2 {
   display: none;
 }
 
-div[role="system"] p {
+#system p {
   text-align: center;
   font: 300 2em/1.5 'Lato', Helvetica, sans-serif;
 }
 
-div[role="system"] ol li {
+#system ol li {
   display: inline-block;
   vertical-align: middle;
   width: 33%;
@@ -192,15 +264,15 @@ div[role="system"] ol li {
   cursor: pointer;
 }
 
-div[role="system"] ol li span {
+#system ol li span {
   display: block;
   text-align: center;
-  font: 100 4em/1 'Lato', Helvetica, sans-serif; 
+  font: 100 4em/1 'Lato', Helvetica, sans-serif;
   margin-bottom: 15px;
   color: #2a2017;
 }
 
-div[role="system"] ol li a {
+#system ol li a {
   display: block;
   padding: 20px 0;
   margin: auto;
@@ -223,7 +295,7 @@ div[role="system"] ol li a {
   transition: all .1s ease;
 }
 
-div[role="system"] ol li a:active, div[role="system"] ol li a:hover {
+#system ol li a:active, #system ol li a:hover {
   -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
   -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
   box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
@@ -235,13 +307,13 @@ div[role="system"] ol li a:active, div[role="system"] ol li a:hover {
 * GLASSES
 *************************************************/
 
-div[role="glasses"] {
+#glasses {
   padding: 60px;
   background: #ffffff;
   border-bottom: 5px solid #ddd;
 }
 
-div[role="glasses"] h2 {
+#glasses h2 {
   text-align: center;
   font: 100 3em/1 'Lato', Helvetica, sans-serif;
   text-shadow: 0 1px 4px rgba(0,0,0,.2);
@@ -249,8 +321,8 @@ div[role="glasses"] h2 {
   color: #2a2017;
   margin-bottom: 40px;
 }
-
-div[role="glasses"] h3 {
+#colors
+#glasses h3 {
   position: absolute;
   bottom: 120px;
   z-index: 99;
@@ -260,7 +332,7 @@ div[role="glasses"] h3 {
   letter-spacing: 3px;
 }
 
-div[role="glasses"] .flexslider_wrapper {
+#glasses .flexslider_wrapper {
   width: 650px;
   margin: 0px auto;
 }
@@ -290,7 +362,7 @@ div[role="glasses"] .flexslider_wrapper {
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { /
+.flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
@@ -388,13 +460,13 @@ html[xmlns] .slides {
 * COLORS
 *************************************************/
 
-div[role="colors"] {
+#colors {
   background: #ededed;
   padding: 60px;
   border-bottom: 5px solid #ccc;
 }
 
-div[role="colors"] h2 {
+#colors h2 {
   margin-bottom: 60px;
   text-align: center;
   font: 100 3em/1 'Lato', Helvetica, sans-serif;
@@ -403,11 +475,11 @@ div[role="colors"] h2 {
   color: #2a2017;
 }
 
-div[role="colors"] ol {
+#colors ol {
   text-align: center;
 }
 
-div[role="colors"] ol > li {
+#colors ol > li {
   display: inline-block;
   vertical-align: top;
   padding: 25px;
@@ -421,16 +493,16 @@ div[role="colors"] ol > li {
   border-radius: 20px;
 }
 
-div[role="colors"] ul {
+#colors ul {
   margin-top: 25px;
 }
 
-div[role="colors"] ul > li {
+#colors ul > li {
   font: 300 0.6em/3.6 'Lato', Helvetica, sans-serif;
   text-align: left;
 }
 
-div[role="colors"] img, div[role="colors"] span {
+#colors img, #colors span {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -443,13 +515,13 @@ div[role="colors"] img, div[role="colors"] span {
 * ORDER
 *************************************************/
 
-div[role="order"] {
+#order {
   background: #f5f5f5;
   padding: 60px;
   border-bottom: 5px solid #ccc;
 }
 
-div[role="order"] h2 {
+#order h2 {
   margin-bottom: 60px;
   text-align: center;
   font: 100 3em/1 'Lato', Helvetica, sans-serif;
@@ -458,59 +530,59 @@ div[role="order"] h2 {
   color: #2a2017;
 }
 
-div[role="order"] p {
-  text-align: center;	
+#order p {
+  text-align: center;
 }
 
-div[role="order"] p.price {
+#order p.price {
   font: 300 3em/1.5 'Lato', Helvetica, sans-serif;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
-div[role="order"] p abbr, div[role="order"] p small {
+#order p abbr, #order p small {
   font: 300 0.6em/1 'Lato', Helvetica, sans-serif;
 }
 
-div[role="order"] p.note {
+#order p.note {
   font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
 }
 
-div[role="order"] h3, div[role="order"] .vcard p span {
-  display: none;	
+#order h3, #order .vcard p span {
+  display: none;
 }
 
-div[role="order"] .vcard {
+#order .vcard {
   margin-top: 60px;
-  margin-bottom: 50px;	
+  margin-bottom: 50px;
 }
 
-div[role="order"] .vcard p {
+#order .vcard p {
   font: 300 2.6em/2 'Lato', Helvetica, sans-serif;
   letter-spacing: 2px;
 }
 
-div[role="order"] .warranty {
-  border: 1px solid #ccc;	
+#order .warranty {
+  border: 1px solid #ccc;
   background: #fefefe;
   padding: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;	
+  border-radius: 20px;
 }
 
-div[role="order"] .warranty h3 {
-  display: block;	
+#order .warranty h3 {
+  display: block;
   font: 300 1.2em/1 'Lato', Helvetica, sans-serif;
   margin-bottom: 30px;
 }
 
-div[role="order"] .warranty p {
-  font: 300 1em/1.6 'Lato', Helvetica, sans-serif;	
+#order .warranty p {
+  font: 300 1em/1.6 'Lato', Helvetica, sans-serif;
   text-align: left;
 }
 
-div[role="order"] .warranty p.first {
+#order .warranty p.first {
   margin-bottom: 20px;
 }
 
@@ -518,83 +590,83 @@ div[role="order"] .warranty p.first {
 * INFOS
 *************************************************/
 
-div[role="infos"] {
+#infos {
   background: #f5f5f5;
   padding: 60px;
-  background-image: url(ricepaper_pattern.png);
+  background-image: url("ricepaper_pattern.png");
   border-bottom: 5px solid #ddd;
 }
 
-div[role="infos"] h2 {
+#infos h2 {
   font: 100 3em/2 'Lato', Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
 
-div[role="infos"] #infos_container {
-  overflow: hidden;	
+#infos #infos_container {
+  overflow: hidden;
   margin-bottom: 70px;
 }
 
-div[role="infos"] #infos_container .description p {
+#infos #infos_container .description p {
   font: 300 1.4em/2 'Lato', Helvetica, sans-serif;
 }
 
-div[role="infos"] #infos_container .description p:first-child {
-  margin-bottom: 30px;	
+#infos #infos_container .description p:first-child {
+  margin-bottom: 30px;
 }
 
-div[role="infos"] #infos_container .image {
+#infos #infos_container .image {
   float: right;
   margin-left: 40px;
 }	
 
-div[role="infos"] #gallery {
-  overflow: hidden;	  
+#infos #gallery {
+  overflow: hidden;
   margin: 0 auto;
 }
 
-div[role="infos"] #gallery li {
+#infos #gallery li {
   float: left;
   margin: 20px 30px;
 }
 
-div[role="infos"] #gallery li img {
+#infos #gallery li img {
   padding: 4px;
   border: 1px solid #ccc;
 }
 
-div[role="infos"] nav {
+#infos nav {
   text-align: center;
   margin-top: 60px;
 }
 
-div[role="infos"] nav li {
+#infos nav li {
   display: inline-block;
   margin: 0 30px;
 }
 
-div[role="infos"] nav a:link, div[role="infos"] nav a:visited {
+#infos nav a:link, #infos nav a:visited {
   color: #000;
 }
 
-div[role="infos"] a#facebook:hover, div[role="infos"] a#facebook:active {
+#infos a#facebook:hover, #infos a#facebook:active {
   color: #3b5998;
 }
 
-div[role="infos"] a#twitter:hover, div[role="infos"] a#twitter:active {
+#infos a#twitter:hover, #infos a#twitter:active {
   color: #00acee;
 }
 
-div[role="infos"] a#pinterest:hover, div[role="infos"] a#pinterest:active {
+#infos a#pinterest:hover, #infos a#pinterest:active {
   color: #d11c2c;
 }
 
-div[role="infos"] a#youtube:hover, div[role="infos"] a#youtube:active {
+#infos a#youtube:hover, #infos a#youtube:active {
   color: #ff0000;
 }
 
-div[role="infos"] nav li span{
+#infos nav li span{
   display: none;
 }
 
