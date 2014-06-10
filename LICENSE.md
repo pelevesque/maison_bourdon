@@ -1,6 +1,8 @@
 # License
 
-Maison Bourdon uses the MIT open source license.
+The Maison Bourdon code uses the MIT open source license.
+
+This does not include images, logos, text, and Maison Bourdon branding. Code only.
 
 ## MIT License (MIT)
 

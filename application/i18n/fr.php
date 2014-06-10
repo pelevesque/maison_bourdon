@@ -7,7 +7,7 @@ return array(
 	'handmade' => 'fait à la main',
 	'design' => 'design',
 
-	'home' => 'acceuil',
+	'home' => 'accueil',
 	'system' => 'système',
 	'models' => 'modèles',
 	'colors' => 'couleurs',
@@ -54,7 +54,7 @@ return array(
 
 	'Maison Bourdon is a small Montréal design boutique specializing in sunglasses since 2013. Its founder, Jean-François Bourdon, is proud to offer est Québec product of quality where the conception and creation is entirely done in Québec.' => 'La Maison Bourdon est une petite entreprise montréalaise de design et de fabrication de lunettes de soleil qui a vu le jour en 2013. Son fondateur, Jean-François Bourdon, est fier d’offrir un produit québécois de qualité, où la conception et la fabrication sont faites entièrement au Québec.',
 
-	'Many sunglass models are currently available, for women and men, in a wide variety of colors. Every frame is created in plastic, painted with a car paint, and garnered with assorted lenses from professional optic laboratories. All materials respect canadian norms of health and safety.' => 'Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assorties de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.',
+	'Many sunglass models are currently available, for women and men, in a wide variety of colors. Every frame is created in plastic, painted with a car paint, and garnered with assorted lenses from professional optic laboratories. All materials respect canadian norms of health and safety.' => 'Plusieurs modèles de lunettes sont actuellement disponibles, pour hommes et femmes, dans un vaste choix de couleurs. Chaque monture de lunettes est fabriquée de plastique (polyuréthane élastomère), peinturée avec une peinture automobile, et assortie de verres fumés de qualité provenant des laboratoires d’optique. Tous les matériaux utilisés dans la fabrication respectent les normes canadiennes.',
 
 	'icons' => 'icons',
 	'photos' => 'photos',
