@@ -103,7 +103,7 @@ header {
   background: #212121;
   z-index: 99;
   height: 175px;
-  opacity: 0.8;
+  opacity: 0.85;
   overflow: hidden;
   -webkit-transition: height 500ms linear, opacity 500ms linear;
   -moz-transition: height 500ms linear, opacity 500ms linear;
@@ -233,7 +233,7 @@ header h1, header nav#menu, header nav#menu li, header nav.social li {
   position: relative;
   padding-top: 60%;
   overflow: hidden;
-  border-bottom: 5px solid #765a45;
+  border-bottom: 5px solid #212121;
 }
 
 #banner .slide {
@@ -285,7 +285,7 @@ header h1, header nav#menu, header nav#menu li, header nav.social li {
   padding: 60px 60px 70px 60px;
   background: #f5f5f5;
   background-image: url("ricepaper_pattern.png");
-  border-bottom: 5px solid #ddd;
+  border-bottom: 5px solid #ccc;
 }
 
 #system h2 {
@@ -295,6 +295,7 @@ header h1, header nav#menu, header nav#menu li, header nav.social li {
 #system p {
   text-align: center;
   font: 300 2em/1.5 'Lato', Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
 #system ol li {
@@ -351,7 +352,7 @@ header h1, header nav#menu, header nav#menu li, header nav.social li {
 #glasses {
   padding: 60px;
   background: #ffffff;
-  border-bottom: 5px solid #ddd;
+  border-bottom: 5px solid #ccc;
 }
 
 #glasses h2 {
@@ -359,17 +360,17 @@ header h1, header nav#menu, header nav#menu li, header nav.social li {
   font: 100 3em/1 'Lato', Helvetica, sans-serif;
   text-shadow: 0 1px 4px rgba(0,0,0,.2);
   letter-spacing: 3px;
-  color: #2a2017;
+  color: #212121;
   margin-bottom: 40px;
 }
 
 #glasses h3 {
   position: absolute;
   bottom: 120px;
-  z-index: 99;
+  z-index: 9;
   font: 300 2.5em/1 'Lato', Helvetica, sans-serif;
   text-align:center;
-  color: #aaa;
+  color: #999;
   letter-spacing: 3px;
 }
 
@@ -502,7 +503,8 @@ html[xmlns] .slides {
 *************************************************/
 
 #colors {
-  background: #ededed;
+  background: #f5f5f5;
+  background-image: url("ricepaper_pattern.png");
   padding: 60px;
   border-bottom: 5px solid #ccc;
 }
@@ -525,13 +527,14 @@ html[xmlns] .slides {
   vertical-align: top;
   padding: 25px;
   font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
+  letter-spacing: 2px;
   background: #fff;
-  margin: 0px 20px;
+  margin: 0px 25px;
   letter-spacing: 1px; 
-  border: 1px solid #dedede;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 
 #colors ul {

@@ -57,10 +57,10 @@
       <span id="quebec_flag"></span>
       <nav class="social">
         <ul>
-          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" class="facebook"><span>Facebook</span> <i class="fa fa-facebook-square fa-2x"></i></a></li>
-          <li><a href="https://twitter.com/maisonbourdon" class="twitter"><span>Twitter</span> <i class="fa fa-twitter fa-2x"></i></a></li>
-          <li><a href="http://www.pinterest.com/maisonbourdon/" class="pinterest"><span>Pinterest</span> <i class="fa fa-pinterest fa-2x"></i></a></li>
-          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" class="youtube"><span>YouTube</span> <i class="fa fa-youtube fa-2x"></i></a></li>
+          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" class="facebook" title="facebook"><span>Facebook</span> <i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/maisonbourdon" class="twitter" title="twitter"><span>Twitter</span> <i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="http://www.pinterest.com/maisonbourdon/" class="pinterest" title="pinterest"><span>Pinterest</span> <i class="fa fa-pinterest fa-2x"></i></a></li>
+          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" class="youtube" title="youtube"><span>YouTube</span> <i class="fa fa-youtube fa-2x"></i></a></li>
         </ul>
       </nav>
       <a href="<?php echo $URL_base; if ($lang == 'en') echo 'fr/'; else echo 'en/' ?>"><?php if ($lang == 'en') echo 'français'; else echo 'English' ?></a>
@@ -147,6 +147,14 @@
     <div id="colors" data-scroll-index="3">
       <h2><?php echo __('Choose your colors') ?></h2>
       <ol>
+        <li><?php echo __('Lenses') ?>
+          <ul>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/lenses/grey.jpg" alt="teinte grise unie" width="100" height="57"> <span><?php echo __('unified grey tint') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/lenses/brown.jpg" alt="teinte brune unie" width="100" height="57"> <span><?php echo __('unified brown tint') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/lenses/grey_graded.jpg" alt="teinte grise dégradée" width="100" height="57"> <span><?php echo __('graded grey tint') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/lenses/brown_graded.jpg" alt="teinte brune dégradée" width="100" height="57"> <span><?php echo __('graded brown tint') ?></span></li>
+          </ul>
+        </li>
         <li><?php echo __('Frame') ?>
           <ul>
             <li><img src="<?php echo $URL_base ?>assets/images/swatches/designo_mystic_white.gif" alt="designo mystic white" width="40" height="40"> <span><?php echo __('designo mystic white') ?></span></li>
@@ -154,14 +162,6 @@
             <li><img src="<?php echo $URL_base ?>assets/images/swatches/ivy_green_metallic.gif" alt="ivy green metallic" width="40" height="40"> <span><?php echo __('ivy green metallic') ?></span></li>
             <li><img src="<?php echo $URL_base ?>assets/images/swatches/dolomite_brown.gif" alt="dolomite brown" width="40" height="40"> <span><?php echo __('dolomite brown') ?></span></li>
             <li><img src="<?php echo $URL_base ?>assets/images/swatches/jet_black_metallic.gif" alt="jet black metallic" width="40" height="40"> <span><?php echo __('jet black metallic') ?></span></li>
-          </ul>
-        </li>
-        <li><?php echo __('Lenses') ?>
-          <ul>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/grey_tint.jpg" alt="teinte grise unie" width="40" height="40"> <span><?php echo __('unified grey tint') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/brown_tint.jpg" alt="teinte brune unie" width="40" height="40"> <span><?php echo __('unified brown tint') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/grey_tint_graded.jpg" alt="teinte grise dégradée" width="40" height="40"> <span><?php echo __('graded grey tint') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/brown_tint_graded.jpg" alt="teinte brune dégradée" width="40" height="40"> <span><?php echo __('graded brown tint') ?></span></li>
           </ul>
         </li>
         <li><?php echo __('Rivet hinges') ?>
@@ -204,10 +204,10 @@
       </ul>
       <nav id="social">
         <ul>
-          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" id="facebook"><span>Facebook</span><i class="fa fa-facebook-square fa-4x"></i></a></li>
-          <li><a href="https://twitter.com/maisonbourdon" id="twitter"><span>Twitter</span><i class="fa fa-twitter fa-4x"></i></a></li>
-          <li><a href="http://www.pinterest.com/maisonbourdon/" id="pinterest"><span>Pinterest</span><i class="fa fa-pinterest fa-4x"></i></a></li>
-          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" id="youtube"><span>YouTube</span><i class="fa fa-youtube fa-4x"></i></a></li>
+          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" id="facebook" title="facebook"><span>Facebook</span><i class="fa fa-facebook-square fa-4x"></i></a></li>
+          <li><a href="https://twitter.com/maisonbourdon" id="twitter" title="twitter"><span>Twitter</span><i class="fa fa-twitter fa-4x"></i></a></li>
+          <li><a href="http://www.pinterest.com/maisonbourdon/" id="pinterest" title="pinterest"><span>Pinterest</span><i class="fa fa-pinterest fa-4x"></i></a></li>
+          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" id="youtube" title="youtube"><span>YouTube</span><i class="fa fa-youtube fa-4x"></i></a></li>
         </ul>
       </nav>
     </div>
