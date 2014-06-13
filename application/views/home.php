@@ -43,7 +43,7 @@
   <body>
     <header>
       <h1>Maison Bourdon</h1>
-      <nav>
+      <nav id="menu">
         <ul>
           <li><a data-scroll-nav="0" class="active"><?php echo __('home') ?></a></li>
           <li><a data-scroll-nav="1"><?php echo __('system') ?></a></li>
@@ -53,8 +53,17 @@
           <li><a data-scroll-nav="5"><?php echo __('infos') ?></a></li>
         </ul>
       </nav>
+      <p><?php echo __('Sunglasses Made in Montréal') ?></p>
+      <span id="quebec_flag"></span>
+      <nav class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/pages/Maison-Bourdon/171123336377241" class="facebook"><span>Facebook</span> <i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/maisonbourdon" class="twitter"><span>Twitter</span> <i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="http://www.pinterest.com/maisonbourdon/" class="pinterest"><span>Pinterest</span> <i class="fa fa-pinterest fa-2x"></i></a></li>
+          <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" class="youtube"><span>YouTube</span> <i class="fa fa-youtube fa-2x"></i></a></li>
+        </ul>
+      </nav>
       <a href="<?php echo $URL_base; if ($lang == 'en') echo 'fr/'; else echo 'en/' ?>"><?php if ($lang == 'en') echo 'français'; else echo 'English' ?></a>
-      <p><span><?php echo __('Sunglasses Made in Montréal') ?></span><span id="quebec_flag"></span></p>
     </header>
     <div id="banner" class="fader" data-scroll-index="0">
       <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_1.jpg" alt="banner 1">

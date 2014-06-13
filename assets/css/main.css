@@ -100,7 +100,7 @@ header {
   right: 0;
   padding: 15px;
   color: #aaa;
-  background: #2a2017;
+  background: #212121;
   z-index: 99;
   height: 175px;
   opacity: 0.8;
@@ -126,30 +126,6 @@ header h1 {
   text-indent: -9999px;
 }
 
-header nav {
-  display: inline-block;
-  margin-left: 100px;
-  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-header nav li {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 40px;
-  cursor: pointer;
-}
-
-header > a {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font: 300 0.7em/1 'Lato', Helvetica, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 header a:link, header a:visited {
   color: #aaa;
 }
@@ -158,30 +134,95 @@ header a:hover, header a:active, header a.active {
   color: #fff;
 }
 
+header nav#menu {
+  display: inline-block;
+  margin-left: 100px;
+  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header nav#menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+header #quebec_flag {
+  position: absolute;
+  top: 109px;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 46px;
+  background-image: url("flag_quebec.jpg");
+}
+
+header > a {
+  position: absolute;
+  top: 145px;
+  left: 20px;
+  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 header p {
-  font: 300 2.6em/1 'Lato', Helvetica, sans-serif;
+  font: 100 2.6em/1 'Lato', Helvetica, sans-serif;
   text-align: center;
   letter-spacing: 6px;
   margin-top: 20px;
   color: #db5705;
+  color: #ffffff;
 }
 
-header p span#quebec_flag {
-  height: 53px;
-  width: 80px;
-  background-image: url("flag_quebec.jpg");
-  margin-left: 10px;
+header nav.social {
+  position: absolute;
+  top: 125px;
+  right: 20px;
 }
 
-header p span {
+header nav.social li {
   display: inline-block;
-  vertical-align: middle;
+  margin: 0 0 0 10px;
+}
+
+header nav.social li a span {
+  display: none;
+}
+
+header nav.social li a {
+  color: #aaa;
+}
+
+header nav.social li a.facebook:hover {
+  color: #3b5998;
+}
+
+header nav.social li a.twitter:hover {
+  color: #00acee;
+}
+
+header nav.social li a.pinterest:hover {
+  color: #d11c2c;
+}
+
+header nav.social li a.youtube:hover {
+  color: #ff0000;
 }
 
 /* IE 7 Fix for inline-block */
-header hgroup, header nav, header nav li, header p span {
+header h1, header nav#menu, header nav#menu li, header nav.social li {
   zoom: 1;
   *display: inline;
+}
+
+/* for mobiles and tablets */
+@media only screen and (max-device-width: 768px) {
+  header p {
+    font: 300 2.6em/1 'Lato', Helvetica, sans-serif;
+  }
 }
 
 /************************************************
