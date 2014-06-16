@@ -177,10 +177,15 @@
       <h2><?php echo __('Place your order') ?></h2>
       <p class="price"><?php echo __('All our models are') ?> <span class="dollar_sign">&dollar;</span><span class="price">299</span> <abbr title="<?php echo __('canadian dollar') ?>">CAD</abbr> <small> + <?php echo __('taxes') ?></small></p>
       <p class="note"><?php echo __('To place an order, send us an email or phone our offices with your choices.') ?></p>
+      
       <h3><?php echo __('Contact') ?></h3>
+
+
+
+
       <div class="vcard">
-        <p class="tel"><span><?php echo __('Phone') ?><span class="sep">:</span></span> +1 (514) 452-7649</p>
-        <p class="email"><span><?php echo __('Email') ?><span class="sep">:</span></span> <a href="mailto:infos@maisonbourdon.com">infos@maisonbourdon.com</a></p>
+        <p class="tel"><span><?php echo __('Phone') ?><span class="sep">:</span></span> <i class="fa fa-phone-square fa-2x"></i>  +1 (514) 452-7649</p>
+        <p class="email"><span><?php echo __('Email') ?><span class="sep">:</span></span> <i class="fa fa-envelope fa-2x"></i>  <a href="mailto:infos@maisonbourdon.com">infos@maisonbourdon.com</a></p>
       </div>
     </div>
     <div id="infos" data-scroll-index="5">
