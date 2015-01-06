@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $URL_base ?>assets/images/apple-touch-icons/touch-icon-ipad-retina.png">
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300">
-    <link rel="stylesheet" type="text/css" href="<?php echo $URL_base ?>assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $URL_base ?>assets/css/site.css">
     <!--[if IE]><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
