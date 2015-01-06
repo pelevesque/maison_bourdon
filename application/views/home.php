@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="<?php echo $lang ?>">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Maison Bourdon &ndash; <?php echo __('Sunglasses Made in Montréal') ?></title>
     <meta name="description" content="Maison Bourdon &ndash; <?php echo __('Sunglasses Made in Montréal') ?>">
     <meta name="keywords" content="Maison Bourdon, Montréal, <?php echo __('sunglasses') ?>, <?php echo __('handmade') ?>, <?php echo __('design') ?>">
     <meta name="author" content="Maison Bourdon">
     <link rel="icon" type="image/x-icon" href="<?php echo $URL_base ?>assets/images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" href="<?php echo $URL_base ?>assets/images/apple-touch-icons/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes= "60x60" href="<?php echo $URL_base ?>assets/images/apple-touch-icons/touch-icon-iphone.png">
     <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $URL_base ?>assets/images/apple-touch-icons/touch-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="120x120" href="<?php echo $URL_base ?>assets/images/apple-touch-icons/touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $URL_base ?>assets/images/apple-touch-icons/touch-icon-ipad-retina.png">
@@ -156,18 +156,18 @@
         </li>
         <li><?php echo __('Frame') ?>
           <ul>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/designo_mystic_white.gif" alt="designo mystic white" width="40" height="40"> <span><?php echo __('designo mystic white') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/seal_grey_metallic.gif" alt="seal grey metallic" width="40" height="40"> <span><?php echo __('seal grey metallic') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/ivy_green_metallic.gif" alt="ivy green metallic" width="40" height="40"> <span><?php echo __('ivy green metallic') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/dolomite_brown.gif" alt="dolomite brown" width="40" height="40"> <span><?php echo __('dolomite brown') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/jet_black_metallic.gif" alt="jet black metallic" width="40" height="40"> <span><?php echo __('jet black metallic') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/designo_mystic_white.gif" alt="designo mystic white" width="40" height="40"> <span><?php echo __('designo mystic white') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/seal_grey_metallic.gif" alt="seal grey metallic" width="40" height="40"> <span><?php echo __('seal grey metallic') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/ivy_green_metallic.gif" alt="ivy green metallic" width="40" height="40"> <span><?php echo __('ivy green metallic') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/dolomite_brown.gif" alt="dolomite brown" width="40" height="40"> <span><?php echo __('dolomite brown') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/jet_black_metallic.gif" alt="jet black metallic" width="40" height="40"> <span><?php echo __('jet black metallic') ?></span></li>
           </ul>
         </li>
         <li><?php echo __('Rivet hinges') ?>
           <ul>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/chrome.gif" alt="chrome" width="40" height="40"> <span><?php echo __('chrome') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/gold.gif" alt="gold" width="40" height="40"> <span><?php echo __('gold') ?></span></li>
-            <li><img src="<?php echo $URL_base ?>assets/images/swatches/gun_metal.gif" alt="gun_metal" width="40" height="40"> <span><?php echo __('gun metal') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/chrome.gif" alt="chrome" width="40" height="40"> <span><?php echo __('chrome') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/gold.gif" alt="gold" width="40" height="40"> <span><?php echo __('gold') ?></span></li>
+            <li><img src="<?php echo $URL_base ?>assets/images/swatches/colors/gun_metal.gif" alt="gun_metal" width="40" height="40"> <span><?php echo __('gun metal') ?></span></li>
           </ul>
         </li>
       </ol>
