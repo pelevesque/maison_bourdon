@@ -219,7 +219,8 @@
       <p><span class="copyright">&#169;</span> 2014 <a href="http://maisonbourdon.com">Maison Bourdon</a> <span class="separator">&bull;</span> <?php echo __('photos') ?> <span class="arrow">&#10141;</span> Hugues Villeneuve <span class="separator">&bull;</span> <?php echo __('icons') ?> <span class="arrow">&#10141;</span> <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> <span class="separator">&bull;</span> <a href="<?php echo $URL_base ?>assets/guarantee/guarantee.pdf"><?php echo __('Maison Bourdon Guarantee') ?></a></p>
     </footer>
     <script type="text/javascript">
-      document.writeln("<script type='text/javascript' src='<?php echo $URL_base ?>assets/js/main.js'><" + "/script>");
+      <!-- Load Site Javascript -->
+      document.writeln("<script type='text/javascript' src='<?php echo $URL_base ?>assets/js/site.min.js'><" + "/script>");
       <!-- Piwik -->
       var _paq = _paq || [];
       _paq.push(['trackPageView']);
@@ -232,7 +233,7 @@
         g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
-    <noscript><p><img src="http://maisonbourdon.com/stats/piwik.php?idsite=1" style="border:0;" alt="piwikl"></p></noscript>
+    <noscript><p><img src="http://maisonbourdon.com/stats/piwik.php?idsite=1" style="border:0;" alt="piwikinvisibleimage"></p></noscript>
     <!-- End Piwik Code -->
   </body>
 </html>
