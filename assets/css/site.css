@@ -154,8 +154,8 @@ header #quebec_flag {
   top: 109px;
   top: 20px;
   right: 20px;
-  width: 70px;
-  height: 46px;
+  width: 65px;
+  height: 43px;
   background-image: url("flag_quebec.jpg");
 }
 
@@ -275,7 +275,7 @@ header h1, header nav#menu, header nav#menu li, header nav.social li {
 #system {
   padding: 60px 60px 70px 60px;
   background: #f5f5f5;
-  background-image: url("ricepaper_pattern.png");
+  background-image: url("ricepaper_pattern.jpg");
   border-bottom: 5px solid #ddd;
 }
 
@@ -487,7 +487,7 @@ html[xmlns] .slides {
 
 #colors {
   background: #f5f5f5;
-  background-image: url("ricepaper_pattern.png");
+  background-image: url("ricepaper_pattern.jpg");
   
   background: #fed345;
   
@@ -518,7 +518,7 @@ html[xmlns] .slides {
   font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
   letter-spacing: 2px;
   background: #fff;
-  /* background-image: url("ricepaper_pattern.png"); */
+  /* background-image: url("ricepaper_pattern.jpg"); */
   margin: 0px 25px;
   letter-spacing: 1px; 
   border: 1px solid #ccc;
@@ -610,7 +610,7 @@ html[xmlns] .slides {
 #infos {
   background: #f5f5f5;
   padding: 60px;
-  background-image: url("ricepaper_pattern.png");
+  background-image: url("ricepaper_pattern.jpg");
   border-bottom: 5px solid #ddd;
 }
 
