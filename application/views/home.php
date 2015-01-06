@@ -199,12 +199,12 @@
         </div>
       </div>
       <ul id="gallery">
-        <li><img src="<?php echo $URL_base ?>assets/images/photos/thumbs/poses.jpg" width="300" alt="gallery photo 1"></li>
-        <li><img src="<?php echo $URL_base ?>assets/images/photos/thumbs/interview.jpg" width="300" alt="gallery photo 2"></li>
-        <li><img src="<?php echo $URL_base ?>assets/images/photos/thumbs/brick.jpg" width="300" alt="gallery photo 3"></li>
-        <li><img src="<?php echo $URL_base ?>assets/images/photos/thumbs/penseur.jpg" width="300" alt="gallery photo 4"></li>
-        <li><img src="<?php echo $URL_base ?>assets/images/photos/thumbs/regardeur.jpg" width="300" alt="gallery photo 5"></li>
-        <li><img src="<?php echo $URL_base ?>assets/images/photos/thumbs/girl.jpg" width="300" alt="gallery photo 6"></li>
+        <li><img src="<?php echo $URL_base ?>assets/images/gallery/thumbs/poses.jpg" width="300" alt="gallery photo 1"></li>
+        <li><img src="<?php echo $URL_base ?>assets/images/gallery/thumbs/interview.jpg" width="300" alt="gallery photo 2"></li>
+        <li><img src="<?php echo $URL_base ?>assets/images/gallery/thumbs/brick.jpg" width="300" alt="gallery photo 3"></li>
+        <li><img src="<?php echo $URL_base ?>assets/images/gallery/thumbs/penseur.jpg" width="300" alt="gallery photo 4"></li>
+        <li><img src="<?php echo $URL_base ?>assets/images/gallery/thumbs/regardeur.jpg" width="300" alt="gallery photo 5"></li>
+        <li><img src="<?php echo $URL_base ?>assets/images/gallery/thumbs/girl.jpg" width="300" alt="gallery photo 6"></li>
       </ul>
       <nav id="social">
         <ul>
