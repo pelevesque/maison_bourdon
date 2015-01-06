@@ -68,7 +68,7 @@
     <div id="banner" class="fader" data-scroll-index="0">
       <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_6.jpg" alt="banner 6">
       <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_7.jpg" alt="banner 7">
-      <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_1.jpg" alt="banner 1">      
+      <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_1.jpg" alt="banner 1">
       <div class="fader_controls">
         <ul class="pager_list"></ul>
       </div>
@@ -178,10 +178,6 @@
       <p class="note"><?php echo __('To place an order, send us an email or phone our offices with your choices.') ?></p>
       
       <h3><?php echo __('Contact') ?></h3>
-
-
-
-
       <div class="vcard">
         <p class="tel"><span><?php echo __('Phone') ?><span class="sep">:</span></span> <i class="fa fa-phone-square fa-2x"></i>  +1 (514) 452-7649</p>
         <p class="email"><span><?php echo __('Email') ?><span class="sep">:</span></span> <i class="fa fa-envelope fa-2x"></i>  <a href="mailto:infos@maisonbourdon.com">infos@maisonbourdon.com</a></p>
