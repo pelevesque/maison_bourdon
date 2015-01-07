@@ -100,7 +100,7 @@ header {
   right: 0;
   height: 175px;
   padding: 15px;
-  color: #aaa;
+  color: #fff;
   background: #212121;
   z-index: 99;
   opacity: 0.85;
@@ -126,15 +126,7 @@ header h1 {
   text-indent: -9999px;
 }
 
-header a:link, header a:visited {
-  color: #aaa;
-}
-
-header a:hover, header a:active, header a.active {
-  color: #eec147;
-}
-
-header nav#menu {
+header > nav {
   display: inline-block;
   margin-left: 100px;
   font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
@@ -142,65 +134,59 @@ header nav#menu {
   text-transform: uppercase;
 }
 
-header nav#menu li {
+header > nav li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 40px;
   cursor: pointer;
 }
 
-header #quebec_flag {
+header > ul {
   position: absolute;
-  top: 109px;
-  top: 20px;
+  top: 30px;
   right: 20px;
-  width: 65px;
-  height: 43px;
-  background-image: url("flag_quebec.jpg");
+  font-size: 26px;
 }
 
-header > a {
-  position: absolute;
-  top: 145px;
-  left: 20px;
-  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+header > ul li {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+header > ul li a {
+  color: #eec147
+}
+
+header > ul li a span {
+  display: none;
 }
 
 header p {
   font: 100 2.6em/1 'Lato', Helvetica, sans-serif;
   text-align: center;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   margin-top: 20px;
+}
+
+header #quebec_flag {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 10px 30px;
+  width: 65px;
+  height: 43px;
+  background-image: url("flag_quebec.jpg");
+}
+
+header a:link, header a:visited {
+  color: #fff;
+}
+
+header a:hover, header a:active, header a.active {
   color: #eec147;
 }
 
-header nav.social {
-  position: absolute;
-  top: 125px;
-  right: 20px;
-}
-
-header nav.social li {
-  display: inline-block;
-  margin: 0 0 0 10px;
-}
-
-header nav.social li a {
-	color: #eec147
-}
-
-header nav.social li a:hover {
-	
-}
-
-header nav.social li a span {
-  display: none;
-}
-
 /* IE 7 Fix for inline-block */
-header h1, header nav#menu, header nav#menu li, header nav.social li {
+header h1, header > nav, header > nav li, header > ul li, header #quebec_flag {
   zoom: 1;
   *display: inline;
 }
