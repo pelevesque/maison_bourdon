@@ -98,13 +98,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 175px;
+  height: auto;
   padding: 15px;
-  color: #fff;
-  background: #212121;
+  background: #231f20;
   z-index: 99;
-  opacity: 0.85;
   overflow: hidden;
+  opacity: 0.8;
   -webkit-transition: height 500ms linear, opacity 500ms linear;
   -moz-transition: height 500ms linear, opacity 500ms linear;
   -ms-transition: height 500ms linear, opacity 500ms linear;
@@ -112,12 +111,15 @@ header {
   transition: height 500ms linear, opacity 500ms linear;
 }
 
-.header_small {
-  height: 86px;
+.header_scroll {
   opacity: 1;
 }
 
-header h1 {
+header div {
+  float: left;
+}
+
+header div h1 {
   display: inline-block;
   vertical-align: middle;
   width: 164px;
@@ -126,76 +128,46 @@ header h1 {
   text-indent: -9999px;
 }
 
-header > nav {
+header div nav {
   display: inline-block;
-  margin-left: 100px;
-  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
+  margin-left: 80px;
+  font: 300 12px/1 'Lato', Helvetica, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-header > nav li {
+header div nav li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 40px;
+  margin-right: 30px;
   cursor: pointer;
 }
 
 header > ul {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  font-size: 26px;
+  float: right;
+  padding-top: 15px;
 }
 
 header > ul li {
   display: inline-block;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 13px;
+  font-size: 26px;
 }
 
 header > ul li a {
-  color: #eec147
+  color: #eec147;
 }
 
-header > ul li a span {
-  display: none;
-}
-
-header p {
-  font: 100 2.6em/1 'Lato', Helvetica, sans-serif;
-  text-align: center;
-  letter-spacing: 3px;
-  margin-top: 20px;
-}
-
-header #quebec_flag {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 10px 30px;
-  width: 65px;
-  height: 43px;
-  background-image: url("flag_quebec.jpg");
-}
-
-header a:link, header a:visited {
-  color: #fff;
+header a, header a:link, header a:visited {
+  color: #999;
 }
 
 header a:hover, header a:active, header a.active {
   color: #eec147;
 }
 
-/* IE 7 Fix for inline-block */
-header h1, header > nav, header > nav li, header > ul li, header #quebec_flag {
-  zoom: 1;
-  *display: inline;
-}
-
-/* for mobiles and tablets */
-@media only screen and (max-device-width: 768px) {
-  header p {
-    font: 300 2.6em/1 'Lato', Helvetica, sans-serif;
-  }
+header span {
+  display: none;
 }
 
 /************************************************
@@ -206,144 +178,90 @@ header h1, header > nav, header > nav li, header > ul li, header #quebec_flag {
   position: relative;
   padding-top: 60%;
   overflow: hidden;
-  border-bottom: 5px solid #212121;
 }
 
-#banner .slide {
+#banner img.slide {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   top: 0;
   z-index: 1;
   opacity: 0;
 }
 
-#banner img.slide {
-  height: auto;
-}
-
-#banner .pager_list {
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  bottom: 0;
-  text-align: center;
-  z-index: 4;
-}
-
-#banner .pager_list li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 7px;
-  background: #fff;
-  opacity: .7;
-  text-indent: -99999px;
-  border-radius: 999px;
-  cursor: pointer;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -ms-transition: all 500ms;
-  -o-transition: all 500ms;
-  transition: all 500ms;
-}
-
-#banner .pager_list li:hover,
-#banner .pager_list li.active {
-  opacity: 1;
-}
-
 /************************************************
-* SYSTEM
+* ABOUT US
 *************************************************/
 
-#system {
-  padding: 60px 60px 70px 60px;
+#about_us {
+  padding: 40px 60px 40px 60px;
+  border-top: 5px solid #231f20;
+  border-bottom: 5px solid #231f20;
   background: #f5f5f5;
   background-image: url("ricepaper_pattern.jpg");
-  border-bottom: 5px solid #ddd;
 }
 
-#system h2 {
-  display: none;
-}
-
-#system p {
+#about_us h2 {
+  font: 100 3em/2 'Lato', Helvetica, sans-serif;
   text-align: center;
-  color: #212121;
-  font: 300 2em/1.5 'Lato', Helvetica, sans-serif;
+  margin-bottom: 40px;
   letter-spacing: 2px;
 }
 
-#system ol li {
+#about_us h2:after {
   display: inline-block;
-  vertical-align: middle;
-  width: 33%;
-  margin-top: 50px;
-  cursor: pointer;
+  margin: 0 0 0 30px;
+  width: 85px;
+  height: 57px;
+  content: url("Quebec_flag.gif");
 }
 
-#system ol li span {
-  display: block;
-  text-align: center;
-  font: 100 4em/1 'Lato', Helvetica, sans-serif;
-  margin-bottom: 15px;
-  color: #eec147;
+#about_us > div {
+  overflow: hidden;
 }
 
-#system ol li a {
-  display: block;
-  padding: 20px 0;
-  margin: auto;
-  width: 280px;
-  font: 300 1.2em/1 'Lato', Helvetica, sans-serif;
+#about_us .description {
+  float: left;
+  width: 450px;
+}
+
+#about_us .description p {
+  font: 300 1.2em/1.4 'Lato', Helvetica, sans-serif;
+  margin-bottom: 30px;
   letter-spacing: 1px;
-  text-align: center;
-  background: #eec147;
-  color: #212121;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
 }
 
-#system ol li a:link, #system ol li a:visited {
-  background: #eec147;
-}
-
-#system ol li a:hover, #system ol li a:active {
-  background: #eeb10c;
+#about_us .image {
+  float: right;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
 }
 
 /************************************************
-* GLASSES
+* MODELS
 *************************************************/
 
-#glasses {
-  padding: 60px;
-  background: #ffffff;
-  border-bottom: 5px solid #eeb10c;
+#models {
+  padding-bottom: 100px;
+  background: #fff;
 }
 
-#glasses h2 {
-  text-align: center;
-  font: 100 3em/1 'Lato', Helvetica, sans-serif;
-  text-shadow: 0 1px 4px rgba(0,0,0,.2);
-  letter-spacing: 3px;
-  color: #212121;
+#models h2 {
+  display: none;
 }
 
-#glasses h3 {
+#models h3 {
   position: absolute;
   bottom: 120px;
   z-index: 9;
-  font: 300 2.5em/1 'Lato', Helvetica, sans-serif;
+  font: 300 2.4em/1 'Lato', Helvetica, sans-serif;
   text-align: center;
-  color: #aaa;
+  color: #999;
   letter-spacing: 3px;
 }
 
-#glasses .flexslider_wrapper {
+#models .flexslider_wrapper {
   width: 650px;
   margin: 0px auto;
 }
@@ -415,7 +333,6 @@ html[xmlns] .slides {
   padding: 0;
   background: #fff;
   position: relative;
-  zoom: 1;
 }
 
 .flex-viewport {
@@ -424,10 +341,6 @@ html[xmlns] .slides {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-}
-
-.flexslider .slides {
-  zoom: 1;
 }
 
 .flexslider .flex-prev, .flexslider .flex-next {
@@ -468,209 +381,86 @@ html[xmlns] .slides {
 }
 
 /************************************************
-* COLORS
+* PURCHASE
 *************************************************/
 
-#colors {
-  background: #f5f5f5;
-  background-image: url("ricepaper_pattern.jpg");
-  
-  background: #fed345;
-  
-  background: #eec147;
-  
-  
+#purchase {
+  color: #999;
   padding: 60px;
-  border-bottom: 5px solid #ccc;
+  background: #231f20;
+  background-image: url("logo_bourdon.png");
+  background-repeat: no-repeat;
+  background-position: 93% 100%;
 }
 
-#colors h2 {
+#purchase a:link,
+#purchase a:visited,
+#purchase a:hover,
+#purchase a:active {
+  color: #eec147;
+}
+
+#purchase h2 {
   margin-bottom: 60px;
-  text-align: center;
   font: 100 3em/1 'Lato', Helvetica, sans-serif;
-  text-shadow: 0 1px 4px rgba(0,0,0,.2);
   letter-spacing: 3px;
-  color: #2a2017;
 }
 
-#colors ol {
-  text-align: center;
+#purchase #stores {
+  margin-bottom: 20px;
 }
 
-#colors ol > li {
+#purchase #stores .vcard {
   display: inline-block;
   vertical-align: top;
-  padding: 25px;
-  font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
-  letter-spacing: 2px;
-  background: #fff;
-  /* background-image: url("ricepaper_pattern.jpg"); */
-  margin: 0px 25px;
-  letter-spacing: 1px; 
-  border: 1px solid #ccc;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  font: 300 1em/1.3 'Lato', Helvetica, sans-serif;
+  margin: 0 35px 35px 0;
+  letter-spacing: 1px;
 }
 
-#colors ul {
-  margin-top: 25px;
-}
-
-#colors ul > li {
-  font: 300 0.6em/3.6 'Lato', Helvetica, sans-serif;
-  text-align: left;
-}
-
-#colors img, #colors span {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  -webkit-border-radius: 40%;
-  -moz-border-radius: 40%;
-  border-radius: 40%;
-}
-
-/************************************************
-* ORDER
-*************************************************/
-
-#order {
-  background: #f5f5f5;
-  background: #fedabc;
-  background: #212121;
-  padding: 60px 60px 20px 60px;
-  border-bottom: 5px solid #ccc;
-  
-  color: #fff;
-}
-
-#order h2 {
-  margin-bottom: 60px;
-  text-align: center;
-  font: 100 3em/1 'Lato', Helvetica, sans-serif;
-  text-shadow: 0 1px 4px rgba(0,0,0,.2);
-  letter-spacing: 3px;
-}
-
-#order p {
-  text-align: center;
-}
-
-#order p.price {
-  font: 300 3em/1.5 'Lato', Helvetica, sans-serif;
-  margin-bottom: 20px;
+#purchase #stores .vcard .org {
+  font: 300 1.1em/1.3 'Lato', Helvetica, sans-serif;
+  color: #ccc;
   letter-spacing: 2px;
 }
 
-#order p abbr, #order p small {
-  font: 300 0.6em/1 'Lato', Helvetica, sans-serif;
+#purchase #stores .vcard .adr {
+  font: 300 0.8em/1.3 'Lato', Helvetica, sans-serif;
+  color: #555;
+  margin-top: 3px;
 }
 
-#order p.note {
-  font: 300 1.5em/1 'Lato', Helvetica, sans-serif;
-}
-
-#order h3, #order .vcard p span {
-  display: none;
-}
-
-#order .vcard {
-  margin-top: 60px;
-  margin-bottom: 50px;
-}
-
-#order .vcard p {
-  font: 300 2.6em/2 'Lato', Helvetica, sans-serif;
-  letter-spacing: 2px;
-}
-
-#order .vcard p i {
-  margin-right: 15px;
-}
-
-/************************************************
-* INFOS
-*************************************************/
-
-#infos {
-  background: #f5f5f5;
-  padding: 60px;
-  background-image: url("ricepaper_pattern.jpg");
-  border-bottom: 5px solid #ddd;
-}
-
-#infos h2 {
-  font: 100 3em/2 'Lato', Helvetica, sans-serif;
-  text-align: center;
+#purchase address {
   margin-bottom: 30px;
 }
 
-#infos #infos_container {
-  overflow: hidden;
-  margin-bottom: 70px;
+#purchase address p {
+  font: 300 2em/1.2 'Lato', Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
-#infos #infos_container .description p {
-  font: 300 1.4em/2 'Lato', Helvetica, sans-serif;
-}
-
-#infos #infos_container .description p:first-child {
+#purchase #representatives {
+  font: 300 0.9em/1.5 'Lato', Helvetica, sans-serif;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
-#infos #infos_container .image {
-  float: right;
-  margin-left: 40px;
-}	
-
-#infos #gallery {
-  overflow: hidden;
-  margin: 0 auto;
+#purchase ul li {
+  font: 300 0.9em/1.5 'Lato', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
-#infos #gallery li {
-  float: left;
-  margin: 20px 30px;
+#purchase li span {
+  color: #999;
 }
 
-#infos #gallery li img {
-  padding: 4px;
-  border: 1px solid #ccc;
+#purchase ul li .note {
+  color: #666;
 }
 
-#infos nav {
-  text-align: center;
-  margin-top: 60px;
-}
-
-#infos nav li {
-  display: inline-block;
-  margin: 0 30px;
-}
-
-#infos nav a:link, #infos nav a:visited {
-  color: #000;
-}
-
-#infos a#facebook:hover, #infos a#facebook:active {
-  color: #3b5998;
-}
-
-#infos a#twitter:hover, #infos a#twitter:active {
-  color: #00acee;
-}
-
-#infos a#pinterest:hover, #infos a#pinterest:active {
-  color: #d11c2c;
-}
-
-#infos a#youtube:hover, #infos a#youtube:active {
-  color: #ff0000;
-}
-
-#infos nav li span{
-  display: none;
+#purchase ul li, #purchase .sep {
+  color: #444;
 }
 
 /************************************************
@@ -678,18 +468,17 @@ html[xmlns] .slides {
 *************************************************/
 
 footer {
-  padding: 20px;
-  background: #2a2017;
-  color: #aaa;
-  font: 300 0.8em/1 'Lato', Helvetica, sans-serif;
-  text-align: center;
-  letter-spacing: 2px;
+  font: 300 0.75em/1 'Lato', Helvetica, sans-serif;
+  color: #444;
+  background: #231f20;
+  padding: 0 0 20px 60px;
+  letter-spacing: 1px;
 }
 
 footer a:link, footer a:visited {
-  color: #ffd305;
+  color: #444;
 }
 
 footer a:hover, footer a:active {
-  color: #ffffff;
+  color: #ffd305;
 }

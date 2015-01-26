@@ -108,7 +108,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/~pel/kohana/',
+	'base_url'   => '/~pel/sites/maisonbourdon.com/',
 	'index_file' => FALSE
 ));
 
