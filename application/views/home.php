@@ -167,7 +167,7 @@
       <div id="representatives">
         <div class="vcard">
           <div class="title"><?php echo __('Sales Representative in France') ?></div>
-          <div class="name">Sébastien Laloy <span class="sep">::</span> <span class="email"><a href="sebastienlaloy@gmail.com">sebastienlaloy@gmail.com</a></span></div>
+          <div class="name">Sébastien Laloy <span class="sep">::</span> <span class="email"><a href="mailto:sebastienlaloy@gmail.com">sebastienlaloy@gmail.com</a></span></div>
         </div>
       </div>
       <ul>
