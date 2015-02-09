@@ -171,7 +171,7 @@
         </div>
       </div>
       <ul>
-        <li><span><?php echo __('In Canada, all models are') ?> <span class="dollar_sign">&dollar;</span><span class="price">150</span> <abbr title="<?php echo __('canadian dollar') ?>">CAD</abbr> <small> + <?php echo __('taxes') ?> <br/><span class="note">[<?php echo __('call for other countries') ?>]</span></small></span></li>
+        <li><span><?php echo __('In Canada, all models are') ?> <span class="dollar_sign">&dollar;</span><span class="price">150</span> <abbr title="<?php echo __('canadian dollar') ?>">CAD</abbr> <small> + <?php echo __('taxes') ?> <br/><span class="note">* <?php echo __('call for other countries') ?></span></small></span></li>
         <li><span><i class="fa fa-file-text"></i> <a href="<?php echo $URL_base ?>assets/guarantee/guarantee.pdf"><?php echo __('Maison Bourdon Guarantee') ?></a></span></li>
       </ul>
     </div>

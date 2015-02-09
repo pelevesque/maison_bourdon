@@ -90,6 +90,14 @@ a {
 }
 
 /************************************************
+* BODY
+*************************************************/
+
+body {
+  background: #231f20;
+}
+
+/************************************************
 * HEADER
 *************************************************/
 
@@ -146,6 +154,7 @@ header div nav li {
 header > ul {
   float: right;
   padding-top: 15px;
+  margin-right: 10px;
 }
 
 header > ul li {
@@ -196,7 +205,7 @@ header span {
 #about_us {
   padding: 40px 60px 40px 60px;
   background: #f5f5f5;
-  background-image: url("ricepaper_pattern.jpg");
+  border-top: 5px solid #231f20;
 }
 
 #about_us h2 {
@@ -220,20 +229,18 @@ header span {
 
 #about_us .description {
   float: left;
-  width: 450px;
+  max-width: 450px;
 }
 
 #about_us .description p {
-  font: 300 1.2em/1.4 'Lato', Helvetica, sans-serif;
+  font: 300 1.1em/1.4 'Lato', Helvetica, sans-serif;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
 
 #about_us .image {
   float: right;
-  padding: 4px;
-  border: 1px solid #ccc;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 /************************************************
@@ -243,6 +250,8 @@ header span {
 #models {
   padding-bottom: 100px;
   background: #fff;
+  border-top: 5px solid #ededed;
+  border-bottom: 5px solid #ccc;
 }
 
 #models h2 {
@@ -384,11 +393,11 @@ html[xmlns] .slides {
 
 #purchase {
   color: #999;
-  padding: 60px;
+  padding: 60px 0 60px 60px;
   background: #231f20;
   background-image: url("logo_bourdon.png");
   background-repeat: no-repeat;
-  background-position: 93% 100%;
+  background-position: 93% 96%;
 }
 
 #purchase a:link,
@@ -437,6 +446,10 @@ html[xmlns] .slides {
   letter-spacing: 2px;
 }
 
+#purchase address p.tel {
+  margin-top: 5px;
+}
+
 #purchase #representatives {
   font: 300 0.9em/1.5 'Lato', Helvetica, sans-serif;
   margin-bottom: 30px;
@@ -469,7 +482,7 @@ footer {
   font: 300 0.75em/1 'Lato', Helvetica, sans-serif;
   color: #444;
   background: #231f20;
-  padding: 0 0 20px 60px;
+  padding: 0 0 10px 60px;
   letter-spacing: 1px;
 }
 
