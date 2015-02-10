@@ -89,6 +89,7 @@ a {
   transition: color 500ms linear, background 500ms linear;
 }
 
+
 /************************************************
 * BODY
 *************************************************/
@@ -213,14 +214,6 @@ header span {
   text-align: center;
   margin-bottom: 40px;
   letter-spacing: 2px;
-}
-
-#about_us h2:after {
-  display: inline-block;
-  margin: 0 0 0 30px;
-  width: 85px;
-  height: 57px;
-  content: url("Quebec_flag.gif");
 }
 
 #about_us > div {
@@ -471,7 +464,7 @@ html[xmlns] .slides {
 }
 
 #purchase ul li, #purchase .sep {
-  color: #444;
+  color: #666;
 }
 
 /************************************************
@@ -484,12 +477,5 @@ footer {
   background: #231f20;
   padding: 0 0 10px 60px;
   letter-spacing: 1px;
-}
-
-footer a:link, footer a:visited {
-  color: #444;
-}
-
-footer a:hover, footer a:active {
-  color: #ffd305;
+  text-align: left;
 }

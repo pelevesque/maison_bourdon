@@ -26,6 +26,5 @@ return array(
 	'taxes' => 'taxes',
 	'call for other countries' => 'appelez pour les autres pays',
 	'Maison Bourdon Guarantee' => 'Garantie Maison Bourdon',
-	'photography' => 'photographie'
 
 );

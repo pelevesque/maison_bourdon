@@ -63,7 +63,7 @@
     </header>
     <div id="banner" class="fader" data-scroll-index="0">
 <?php
-  $slides = array(1, 2);
+  $slides = array(1, 2, 3);
   foreach ($slides as $slide):
 ?>
       <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_<?php echo $slide ?>.jpg" alt="banner <?php echo $slide ?>">
@@ -88,8 +88,22 @@
           <div class="flexslider">
             <h3>MB-1</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-1_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-1_front_black.jpg" alt="MB-1 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-1_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-1_side_black.jpg" alt="MB-1 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_black.jpg" alt="MB-1 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_brown.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_brown.jpg" alt="MB-1 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB01_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB01_side_black.jpg" alt="MB-1 photo 3"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="flexslider_wrapper">
+          <div class="flexslider">
+            <h3>MB-2</h3>
+            <ul class="slides">
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_black.jpg" alt="MB-2 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_white.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_white.jpg" alt="MB-2 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_black.jpg" alt="MB-2 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_white-black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_white-black.jpg" alt="MB-2 photo 4"></li> 
             </ul>
           </div>
         </div>
@@ -99,8 +113,11 @@
           <div class="flexslider">
             <h3>MB-3</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-3_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-3_front_black.jpg" alt="MB-3 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-3_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-3_side_black.jpg" alt="MB-3 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_black-white.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_black-white.jpg" alt="MB-3 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_white-black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_white-black.jpg" alt="MB-3 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black-white.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black-white.jpg" alt="MB-3 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black.jpg" alt="MB-3 photo 4"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_white-black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_white-black.jpg" alt="MB-3 photo 5"></li>
             </ul>
           </div>
         </div>
@@ -110,20 +127,8 @@
           <div class="flexslider">
             <h3>MB-4</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-4_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-4_front_black.jpg" alt="MB-4 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-4_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-4_side_black.jpg" alt="MB-4 photo 2"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="flexslider_wrapper">
-          <div class="flexslider">
-            <h3>MB-6</h3>
-            <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-6_front_brown.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-6_front_brown.jpg" alt="MB-6 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-6_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-6_front_black.jpg" alt="MB-6 photo 2"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB-6_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB-6_side_black.jpg" alt="MB-6 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB04_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB04_front_black.jpg" alt="MB-4 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB04_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB04_side_black.jpg" alt="MB-4 photo 2"></li>
             </ul>
           </div>
         </div>
@@ -167,7 +172,7 @@
       <div id="representatives">
         <div class="vcard">
           <div class="title"><?php echo __('Sales Representative in France') ?></div>
-          <div class="name">Sébastien Laloy <span class="sep">::</span> <span class="email"><a href="mailto:sebastienlaloy@gmail.com">sebastienlaloy@gmail.com</a></span></div>
+          <div class="name">Sébastien Laloy <span class="sep">::</span> <span class="email"><a href="sebastienlaloy@gmail.com">sebastienlaloy@gmail.com</a></span></div>
         </div>
       </div>
       <ul>
@@ -178,8 +183,6 @@
     <footer>
       <p>
         <span class="copyright"><span class="sign">&#169;</span> <span class="year">2015</span> Maison Bourdon</span>
-        <span class="sep">::</span>
-        <span class="photography"><?php echo __('photography') ?> <a href="http://www.sebastienlaloy.com" title="http://www.sebastienlaloy.com">Sébastien Laloy</a></span>
       </p>
     </footer>
     <script type="text/javascript">
