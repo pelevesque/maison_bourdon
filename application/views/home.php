@@ -27,7 +27,7 @@
           topOffset: -86
         });
         $('#banner').easyFader({
-          slideDur: 8000,
+          slideDur: 3000,
           fadeDur: 1000
         });
         $(window).scroll(function(){
@@ -48,7 +48,8 @@
           <ul>
             <li><a data-scroll-nav="0" class="active"><i class="fa fa-chevron-circle-up fa-2x"></i><span><?php echo __('top') ?></span></a></li>
             <li><a data-scroll-nav="1"><?php echo __('about us') ?></a></li>
-            <li><a data-scroll-nav="2"><?php echo __('models') ?></a></li>
+            <li><a data-scroll-nav="2"><?php echo __('Fauna') ?></a></li>
+            <li><a data-scroll-nav="3"><?php echo __('models') ?></a></li>
             <li><a data-scroll-nav="4"><?php echo __('purchase') ?></a></li>
             <li><a href="<?php echo $URL_base; if ($lang == 'en') echo 'fr/'; else echo 'en/' ?>"><?php if ($lang == 'en') echo 'français'; else echo 'English' ?></a></li>
           </ul>
@@ -63,7 +64,7 @@
     </header>
     <div id="banner" class="fader" data-scroll-index="0">
 <?php
-  $slides = array(1, 2, 3);
+  $slides = array(1, 2, 3, 4);
   foreach ($slides as $slide):
 ?>
       <img class="slide" src="<?php echo $URL_base ?>assets/images/banners/banner_<?php echo $slide ?>.jpg" alt="banner <?php echo $slide ?>">
@@ -71,26 +72,34 @@
     </div>
     <div id="about_us" data-scroll-index="1">
       <h2><?php echo __('Sunglasses Made in Montréal') ?></h2>
-      <div>
-        <div class="description">
-          <p><?php echo __('Maison Bourdon is a small Montréal design boutique specializing in sunglasses since 2013. Its founder, Jean-François Bourdon, is proud to offer a quality product designed and fabricated in Québec.') ?></p>
-          <p><?php echo __('Many models of sunglasses are available, for women and men, in a wide variety of colors. Every frame is moulded in plastic, painted with a car paint, and fitted with assorted lenses from professional optical laboratories. All materials respect Canadian health and safety norms.') ?></p>
-        </div>
-        <div class="image">
-          <img src="<?php echo $URL_base ?>assets/images/photos/maison_bourdon.jpg" width="425"  alt="Maison Bourdon">
-        </div>
+      <div class="description">
+        <p><?php echo __('Maison Bourdon is a small Montréal design boutique specializing in sunglasses since 2013. Its founder, Jean-François Bourdon, is proud to offer a quality product designed and fabricated in Québec.') ?></p>
+        <p><?php echo __('Many models of sunglasses are available, for women and men, in a wide variety of colors. Every frame is moulded in plastic, painted with a car paint, and fitted with assorted lenses from professional optical laboratories. All materials respect Canadian health and safety norms.') ?></p>
+      </div>
+      <div class="image">
+        <img src="<?php echo $URL_base ?>assets/images/photos/presentoir.jpg" width="389px" height="270px" alt="showcase">
+        <img src="<?php echo $URL_base ?>assets/images/photos/modelgirl_1.jpg" width="180px" height="270px" alt="model 1">
+        <img src="<?php echo $URL_base ?>assets/images/photos/modelgirl_2.jpg" width="180px" height="270px" alt="model 2">
       </div>
     </div>
-    <div id="models" data-scroll-index="2">
+    <div id="fauna" data-scroll-index="2">
+      <img src="<?php echo $URL_base ?>assets/images/fauna/fauna.png" width="506px" height="146px" alt="fauna">
+      <p id="fauna_tagline"><?php echo __('Canada\'s only chimpanzee sanctuary') ?></p>
+      <p id="fauna_donation"><?php echo __('10$ of every purchase goes to ') ?><a href="http://www.faunafoundation.org"><?php echo __('Fauna Foundation') ?></a></p>
+    </div>
+    <div id="models" data-scroll-index="3">
       <h2><?php echo __('Models') ?></h2>
       <div class="slide">
         <div class="flexslider_wrapper">
           <div class="flexslider">
             <h3>MB-1</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_black.jpg" alt="MB-1 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_brown.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB01_front_brown.jpg" alt="MB-1 photo 2"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB01_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB01_side_black.jpg" alt="MB-1 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB1_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB1_a1.jpg" alt="MB-1 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB1_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB1_a2.jpg" alt="MB-1 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB1_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB1_b1.jpg" alt="MB-1 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB1_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB1_b2.jpg" alt="MB-1 photo 4"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB1_c1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB1_c1.jpg" alt="MB-1 photo 5"></li>
+              <!-- <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB1_c2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB1_c2.jpg" alt="MB-1 photo 6"></li> -->
             </ul>
           </div>
         </div>
@@ -100,10 +109,10 @@
           <div class="flexslider">
             <h3>MB-2</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_black.jpg" alt="MB-2 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_white.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_front_white.jpg" alt="MB-2 photo 2"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_black.jpg" alt="MB-2 photo 3"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_white-black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB02_side_white-black.jpg" alt="MB-2 photo 4"></li> 
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB2_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB2_a1.jpg" alt="MB-2 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB2_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB2_a2.jpg" alt="MB-2 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB2_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB2_b1.jpg" alt="MB-2 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB2_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB2_b2.jpg" alt="MB-2 photo 4"></li>
             </ul>
           </div>
         </div>
@@ -113,11 +122,14 @@
           <div class="flexslider">
             <h3>MB-3</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_black-white.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_black-white.jpg" alt="MB-3 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_white-black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_front_white-black.jpg" alt="MB-3 photo 2"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black-white.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black-white.jpg" alt="MB-3 photo 3"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_black.jpg" alt="MB-3 photo 4"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_white-black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB03_side_white-black.jpg" alt="MB-3 photo 5"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_a1.jpg" alt="MB-3 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_a2.jpg" alt="MB-3 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_b1.jpg" alt="MB-3 photo 3"></li>
+              
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_c2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_c2.jpg" alt="MB-3 photo 6"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_c1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_c1.jpg" alt="MB-3 photo 5"></li>
+              <!-- <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_b2.jpg" alt="MB-3 photo 4"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_c3.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_c3.jpg" alt="MB-3 photo 7"></li> -->
             </ul>
           </div>
         </div>
@@ -127,12 +139,49 @@
           <div class="flexslider">
             <h3>MB-4</h3>
             <ul class="slides">
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB04_front_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB04_front_black.jpg" alt="MB-4 photo 1"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB04_side_black.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB04_side_black.jpg" alt="MB-4 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_a1.jpg" alt="MB-4 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_a2.jpg" alt="MB-4 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_b1.jpg" alt="MB-4 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_b2.jpg" alt="MB-4 photo 4"></li> 
             </ul>
           </div>
         </div>
       </div>
+      <div class="slide">
+        <div class="flexslider_wrapper">
+          <div class="flexslider">
+            <h3>MB-5</h3>
+            <ul class="slides">
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB5_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB5_a1.jpg" alt="MB-5 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB5_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB5_a2.jpg" alt="MB-5 photo 2"></li>
+            </ul>
+          </div>
+        </div>
+      </div>    
+      <div class="slide">
+        <div class="flexslider_wrapper">
+          <div class="flexslider">
+            <h3>MB-6</h3>
+            <ul class="slides">
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB6_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB6_a1.jpg" alt="MB-6 photo 1"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB6_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB6_a2.jpg" alt="MB-6 photo 2"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB6_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB6_b1.jpg" alt="MB-6 photo 3"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB6_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB6_b2.jpg" alt="MB-6 photo 4"></li>
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB6_c1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB6_c1.jpg" alt="MB-6 photo 5"></li>
+              <!-- <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB6_c2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB6_c2.jpg" alt="MB-6 photo 6"></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="boitier">
+        <div class="flexslider_wrapper">
+          <div class="flexslider">
+            <ul class="slides">
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/boitier.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/boitier.jpg" alt="boitier"></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
     </div>
     <div id="purchase" data-scroll-index="4">
       <h2><?php echo __('Available in these stores') ?></h2>
@@ -148,12 +197,12 @@
           </div>
         </div>
         <div class="vcard">
-          <div class="org">L'Espace D</div>
-          <div class="url"><a href="http://www.lespacedonline.com">http://www.lespacedonline.com</a></div>
-          <div class="tel">+1 (514) 281-1441</div>
+          <div class="org">Signatures Québécoises</div>
+          <div class="url"><a href="http://www.signaturesquebecoises.com">http://www.signaturesquebecoises.com/</a></div>
+          <div class="tel">+1 (418) 648-9976</div>
           <div class="adr">
-            <div class="street-address">4141 Saint-Laurent</div>
-            <div class="locality">Montréal, Québec</div>
+            <div class="street-address">560 rue St Joseph Est</div>
+            <div class="locality">Québec, Québec</div>
             <div class="country">Canada</div>
           </div>
         </div>
@@ -161,6 +210,15 @@
           <div class="org"><?php echo __('Mano Online Store') ?></div>
           <div class="url"><a href="http://www.mano.ca/catalogsearch/result/?q=maison+bourdon">http://www.mano.ca/</a></div>
           <div class="tel">+1 (844) 991-4500</div>
+        </div>
+        <div class="vcard">
+          <div class="org">L'Autre Couture</div>
+          <div class="adr">
+            <div class="street-address">Promenades de la Cathédrale</div>
+            <div class="street-address">625 rue Ste-Catherine Ouest</div>
+            <div class="locality">Montréal, Québec</div>
+            <div class="country">Canada</div>
+          </div>
         </div>
       </div>
       <h2><?php echo __('Buy direct') ?></h2>
@@ -172,11 +230,11 @@
       <div id="representatives">
         <div class="vcard">
           <div class="title"><?php echo __('Sales Representative in France') ?></div>
-          <div class="name">Sébastien Laloy <span class="sep">::</span> <span class="email"><a href="sebastienlaloy@gmail.com">sebastienlaloy@gmail.com</a></span></div>
+          <div class="name">Sébastien Laloy <span class="sep">::</span> <span class="email"><a href="mailto:sebastienlaloy@gmail.com">sebastienlaloy@gmail.com</a></span></div>
         </div>
       </div>
       <ul>
-        <li><span><?php echo __('In Canada, all models are') ?> <span class="dollar_sign">&dollar;</span><span class="price">150</span> <abbr title="<?php echo __('canadian dollar') ?>">CAD</abbr> <small> + <?php echo __('taxes') ?> <br/><span class="note">* <?php echo __('call for other countries') ?></span></small></span></li>
+        <li><span><?php echo __('In Canada, all models start at') ?> <span class="dollar_sign">&dollar;</span><span class="price">199</span> <abbr title="<?php echo __('canadian dollar') ?>">CAD</abbr> <small> + <?php echo __('taxes') ?> <br/><span class="note">* <?php echo __('call for other countries') ?></span></small></span></li>
         <li><span><i class="fa fa-file-text"></i> <a href="<?php echo $URL_base ?>assets/guarantee/guarantee.pdf"><?php echo __('Maison Bourdon Guarantee') ?></a></span></li>
       </ul>
     </div>

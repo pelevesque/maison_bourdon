@@ -21,10 +21,14 @@ return array(
 	'Buy direct' => 'Achetez directement',
 	'Mano Online Store' => 'Magasin en ligne Mano',
 	'Sales Representative in France' => 'Représentant des ventes en France',
-	'In Canada, all models are' => 'Au Canada, tous nos modèles coûtent',
+	'In Canada, all models start at' => 'Au Canada, tous nos modèles sont à partir de',
 	'canadian dollar' => 'Dollar canadien',
 	'taxes' => 'taxes',
 	'call for other countries' => 'appelez pour les autres pays',
 	'Maison Bourdon Guarantee' => 'Garantie Maison Bourdon',
+	'photography' => 'photographie',
 
+	'Canada\'s only chimpanzee sanctuary' => 'Le seul sanctuaire de chimpanzé au Canada',
+	'10$ of every purchase goes to ' => '10$ de chaque achat va à la ',
+	'Fauna Foundation' => 'Fondation Fauna'
 );
