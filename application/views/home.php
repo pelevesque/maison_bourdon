@@ -74,7 +74,7 @@
       <h2><?php echo __('Sunglasses Made in Montréal') ?></h2>
       <div class="description">
         <p><?php echo __('Maison Bourdon is a small Montréal design boutique specializing in sunglasses since 2013. Its founder, Jean-François Bourdon, is proud to offer a quality product designed and fabricated in Québec.') ?></p>
-        <p><?php echo __('Many models of sunglasses are available, for women and men, in a wide variety of colors. Every frame is moulded in plastic, painted with a car paint, and fitted with assorted lenses from professional optical laboratories. All materials respect Canadian health and safety norms.') ?></p>
+        <p><?php echo __('Many models of sunglasses are available, for women and men, in a wide variety of colors. Every frame is moulded in plastic and fitted with assorted lenses from professional optical laboratories. All materials respect Canadian health and safety norms.') ?></p>
       </div>
       <div class="image">
         <img src="<?php echo $URL_base ?>assets/images/photos/presentoir.jpg" width="389px" height="270px" alt="showcase">
