@@ -206,7 +206,6 @@ header span {
   padding: 50px 60px 60px 60px;
   background: #fff;
   border-top: 5px solid #231f20;
-  border-bottom: 5px solid #ededed;
 }
 
 #about_us h2 {
@@ -243,37 +242,6 @@ header span {
 
 #about_us .image img {
   margin-right: 20px;
-}
-
-/************************************************
-* FAUNA
-*************************************************/
-
-#fauna {
-  padding: 90px;
-  text-align: center;
-  background: #dedede;
-  background-image: url("chimp.png");
-  background-repeat: no-repeat;
-  background-position: 99% 10%;
-  border-bottom: 5px solid #ededed;
-}
-
-#fauna p#fauna_tagline {
-  font: 300 1.5em/1.6 'Lato', Helvetica, sans-serif;
-}
-
-#fauna p#fauna_donation {
-  margin-top: 40px;
-  font: 300 2.4em/1.4 'Lato', Helvetica, sans-serif;
-}
-
-#fauna a, #fauna a:link, #fauna a:visited {
-  color: #06844b;
-}
-
-#fauna a:hover, #fauna a:active, #fauna a.active {
-  color: #06844b;
 }
 
 /************************************************
@@ -424,6 +392,37 @@ html[xmlns] .slides {
 }
 
 /************************************************
+* FAUNA
+*************************************************/
+
+#fauna {
+  padding: 90px;
+  text-align: center;
+  background: #dedede;
+  background-image: url("chimp.png");
+  background-repeat: no-repeat;
+  background-position: 99% 10%;
+  border-bottom: 5px solid #ededed;
+}
+
+#fauna p#fauna_tagline {
+  font: 300 1.5em/1.6 'Lato', Helvetica, sans-serif;
+}
+
+#fauna p#fauna_donation {
+  margin-top: 40px;
+  font: 300 2.4em/1.4 'Lato', Helvetica, sans-serif;
+}
+
+#fauna a, #fauna a:link, #fauna a:visited {
+  color: #06844b;
+}
+
+#fauna a:hover, #fauna a:active, #fauna a.active {
+  color: #06844b;
+}
+
+/************************************************
 * PURCHASE
 *************************************************/
 
@@ -501,6 +500,7 @@ html[xmlns] .slides {
 #purchase li span {
   color: #999;
 }
+
 /*
 #purchase ul li .note {
   color: #666;

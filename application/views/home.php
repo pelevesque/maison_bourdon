@@ -48,8 +48,8 @@
           <ul>
             <li><a data-scroll-nav="0" class="active"><i class="fa fa-chevron-circle-up fa-2x"></i><span><?php echo __('top') ?></span></a></li>
             <li><a data-scroll-nav="1"><?php echo __('about us') ?></a></li>
-            <li><a data-scroll-nav="2"><?php echo __('Fauna') ?></a></li>
-            <li><a data-scroll-nav="3"><?php echo __('models') ?></a></li>
+            <li><a data-scroll-nav="2"><?php echo __('models') ?></a></li>
+            <li><a data-scroll-nav="3"><?php echo __('Fauna') ?></a></li>
             <li><a data-scroll-nav="4"><?php echo __('purchase') ?></a></li>
             <li><a href="<?php echo $URL_base; if ($lang == 'en') echo 'fr/'; else echo 'en/' ?>"><?php if ($lang == 'en') echo 'français'; else echo 'English' ?></a></li>
           </ul>
@@ -82,12 +82,8 @@
         <img src="<?php echo $URL_base ?>assets/images/photos/modelgirl_2.jpg" width="180px" height="270px" alt="model 2">
       </div>
     </div>
-    <div id="fauna" data-scroll-index="2">
-      <img src="<?php echo $URL_base ?>assets/images/fauna/fauna.png" width="506px" height="146px" alt="fauna">
-      <p id="fauna_tagline"><?php echo __('Canada\'s only chimpanzee sanctuary') ?></p>
-      <p id="fauna_donation"><?php echo __('10$ of every purchase goes to ') ?><a href="http://www.faunafoundation.org"><?php echo __('Fauna Foundation') ?></a></p>
-    </div>
-    <div id="models" data-scroll-index="3">
+
+    <div id="models" data-scroll-index="2">
       <h2><?php echo __('Models') ?></h2>
       <div class="slide">
         <div class="flexslider_wrapper">
@@ -182,6 +178,11 @@
           </div>
         </div>
       </div> 
+    </div>
+    <div id="fauna" data-scroll-index="3">
+      <img src="<?php echo $URL_base ?>assets/images/fauna/fauna.png" width="506px" height="146px" alt="fauna">
+      <p id="fauna_tagline"><?php echo __('Canada\'s only chimpanzee sanctuary') ?></p>
+      <p id="fauna_donation"><?php echo __('10$ of every purchase goes to ') ?><a href="http://www.faunafoundation.org"><?php echo __('Fauna Foundation') ?></a></p>
     </div>
     <div id="purchase" data-scroll-index="4">
       <h2><?php echo __('Available in these stores') ?></h2>
