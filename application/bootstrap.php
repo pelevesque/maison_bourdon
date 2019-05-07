@@ -108,8 +108,9 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/~pel/sites/maisonbourdon.com/',
-	'index_file' => FALSE
+	// 'base_url'   => '/home/pelewfml/public_html/archive/maisonbourdon.com',
+		'base_url'   => 'http://www.pelevesque.com/archive/maisonbourdon.com',
+	  'index_file' => FALSE
 ));
 
 /**
@@ -142,7 +143,7 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
- 
+
 /**
  * Setting up a multilang route.
  */
@@ -172,4 +173,3 @@ Route::set('default', $lang_param, array(
 	'action'      => 'index',
 	'lang'        => $config->default,
 ));
-
