@@ -56,7 +56,7 @@
         </nav>
       </div>
       <ul>
-        <li><a href="https://www.facebook.com/MaisonBourdon" class="facebook" title="facebook"><span>Facebook</span> <i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="https://www.facebook.com/MaisonBourdonMontreal" class="facebook" title="facebook"><span>Facebook</span> <i class="fa fa-facebook-square"></i></a></li>
         <li><a href="https://twitter.com/maisonbourdon" class="twitter" title="twitter"><span>Twitter</span> <i class="fa fa-twitter"></i></a></li>
         <li><a href="http://www.pinterest.com/maisonbourdon/" class="pinterest" title="pinterest"><span>Pinterest</span> <i class="fa fa-pinterest"></i></a></li>
         <li><a href="http://www.youtube.com/watch?v=aL4ZbnsryVc" class="youtube" title="youtube"><span>YouTube</span> <i class="fa fa-youtube"></i></a></li>
@@ -121,7 +121,7 @@
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_a1.jpg" alt="MB-3 photo 1"></li>
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_a2.jpg" alt="MB-3 photo 2"></li>
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_b1.jpg" alt="MB-3 photo 3"></li>
-              
+
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_c2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_c2.jpg" alt="MB-3 photo 6"></li>
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_c1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_c1.jpg" alt="MB-3 photo 5"></li>
               <!-- <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB3_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB3_b2.jpg" alt="MB-3 photo 4"></li>
@@ -138,7 +138,7 @@
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_a1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_a1.jpg" alt="MB-4 photo 1"></li>
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_a2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_a2.jpg" alt="MB-4 photo 2"></li>
               <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_b1.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_b1.jpg" alt="MB-4 photo 3"></li>
-              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_b2.jpg" alt="MB-4 photo 4"></li> 
+              <li data-thumb="<?php echo $URL_base ?>assets/images/lunettes/MB4_b2.jpg"><img src="<?php echo $URL_base ?>assets/images/lunettes/MB4_b2.jpg" alt="MB-4 photo 4"></li>
             </ul>
           </div>
         </div>
@@ -153,7 +153,7 @@
             </ul>
           </div>
         </div>
-      </div>    
+      </div>
       <div class="slide">
         <div class="flexslider_wrapper">
           <div class="flexslider">
@@ -177,7 +177,7 @@
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
     <div id="fauna" data-scroll-index="3">
       <img src="<?php echo $URL_base ?>assets/images/fauna/fauna.png" width="506px" height="146px" alt="fauna">
